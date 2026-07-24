@@ -60,7 +60,7 @@ campaignTrail_temp.questions_json = [
         "model": "campaign_trail.question",
         "pk": 1038,
         "fields": {
-            "description": "Pundits have started questioning the so-called Pence Rule, based on your running-mate's refusal to dine alone with a woman. What are your thoughts?"
+            "description": "You have seen the news, the people shouting on both sides. There are many issues tearing the nation apart but the one above them all is Immigration. Your positions on immigration have changed in many ways since your election all the way in 2012. You need to make sure that you take both a popular position and one that doesn't alienate your base."
         }
     },
     {
@@ -925,7 +925,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5127,
         "fields": {
             "question": 1038,
-            "description": "Can you really blame Mike in this day and age? One false accusation or misinterpreted statement, and suddenly your entire career can be at risk."
+            "description": "Immigration is one of the most important issues our nation has to address. We need to be the example of the world. I believe that being tough on immigration but to have legal ways to become a citizen "
         }
     },
     {
@@ -933,7 +933,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5128,
         "fields": {
             "question": 1038,
-            "description": "Maybe if Bill Clinton and some other people I can think of would have followed this common-sense recommendation, their lives would have been much simpler."
+            "description": "We need to be strong on our borders. Being American is a privilege not a right. We need to act like it."
         }
     },
     {
@@ -941,7 +941,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5129,
         "fields": {
             "question": 1038,
-            "description": "I understand some of the issues with this. Nobody respects women more than I do, but at the same time, I have an absolutely tremendous amount of respect for Mike Pence."
+            "description": "We need to be clear. America is a nation that has worked in tandem with immigrants for centuries. This won't stop now. I'll introduce a few regulations but we can't cut off a vital part of our economy and working class"
         }
     },
     {
@@ -4428,7 +4428,7 @@ campaignTrail_temp.candidate_issue_score_json = [
         "fields": {
             "candidate": 200,
             "issue": 102,
-            "issue_score": 0.1
+            "issue_score": -0.5
         }
     },
     {
@@ -4473,7 +4473,7 @@ campaignTrail_temp.candidate_issue_score_json = [
         "fields": {
             "candidate": 201,
             "issue": 102,
-            "issue_score": 0
+            "issue_score": 0.5
         }
     },
     {
@@ -4518,7 +4518,7 @@ campaignTrail_temp.candidate_issue_score_json = [
         "fields": {
             "candidate": 202,
             "issue": 102,
-            "issue_score": 0.6
+            "issue_score": -0.3
         }
     },
     {
@@ -4563,7 +4563,7 @@ campaignTrail_temp.candidate_issue_score_json = [
         "fields": {
             "candidate": 203,
             "issue": 102,
-            "issue_score": 0.7
+            "issue_score": 0.3
         }
     },
     {
@@ -6911,7 +6911,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5127,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": -0.0021
+            "global_multiplier": 0.0015
         }
     },
     {
@@ -6921,7 +6921,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5128,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": -0.0016
+            "global_multiplier": 0.001
         }
     },
     {
@@ -7773,6 +7773,36 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 202,
             "global_multiplier": -0.005
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21090,
+        "fields": {
+            "answer": 5127,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21091,
+        "fields": {
+            "answer": 5127,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21092,
+        "fields": {
+            "answer": 5128,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": 0.005
+        }
     }
 ];
 
@@ -8292,9 +8322,10 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 2626,
         "fields": {
             "answer": 5128,
-            "issue": 103,
-            "issue_score": -0.65,
-            "issue_importance": 1
+            "issue": 104,
+            "issue_score": -0.05,
+            "issue_importance": 1,
+            "affected_candidate": 200
         }
     },
     {
@@ -9227,7 +9258,7 @@ campaignTrail_temp.answer_score_state_json = [
             "state": 1022,
             "candidate": 200,
             "affected_candidate": 203,
-            "state_multiplier": 1
+            "state_multiplier": 0.75
         }
     },
     {
@@ -9238,7 +9269,7 @@ campaignTrail_temp.answer_score_state_json = [
             "state": 1031,
             "candidate": 200,
             "affected_candidate": 203,
-            "state_multiplier": 1
+            "state_multiplier": 0.75
         }
     },
     {
@@ -10635,7 +10666,7 @@ campaignTrail_temp.answer_score_state_json = [
             "state": 1011,
             "candidate": 200,
             "affected_candidate": 201,
-            "state_multiplier": 0.25
+            "state_multiplier": 0.1
         }
     },
     {
@@ -10646,7 +10677,7 @@ campaignTrail_temp.answer_score_state_json = [
             "state": 1043,
             "candidate": 200,
             "affected_candidate": 201,
-            "state_multiplier": 0.2
+            "state_multiplier": 0.05
         }
     },
     {
@@ -11179,24 +11210,211 @@ campaignTrail_temp.answer_score_state_json = [
     },
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 21090,
+        "pk": 21094,
         "fields": {
-            "answer": 20986,
-            "state": 1011,
+            "answer": 5128,
+            "state": 1020,
             "candidate": 200,
             "affected_candidate": 200,
-            "state_multiplier": -0.1
+            "state_multiplier": -0.01
         }
     },
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 21091,
+        "pk": 21095,
         "fields": {
-            "answer": 20986,
-            "state": 1043,
+            "answer": 5128,
+            "state": 1036,
             "candidate": 200,
             "affected_candidate": 200,
-            "state_multiplier": -0.05
+            "state_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21096,
+        "fields": {
+            "answer": 5128,
+            "state": 1038,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21097,
+        "fields": {
+            "answer": 5128,
+            "state": 1044,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21098,
+        "fields": {
+            "answer": 5128,
+            "state": 1046,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21099,
+        "fields": {
+            "answer": 5129,
+            "state": 1002,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21100,
+        "fields": {
+            "answer": 5129,
+            "state": 1002,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21101,
+        "fields": {
+            "answer": 5129,
+            "state": 1000,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21102,
+        "fields": {
+            "answer": 5129,
+            "state": 1003,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21103,
+        "fields": {
+            "answer": 5129,
+            "state": 1015,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21104,
+        "fields": {
+            "answer": 5129,
+            "state": 1016,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21105,
+        "fields": {
+            "answer": 5129,
+            "state": 1017,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21106,
+        "fields": {
+            "answer": 5129,
+            "state": 1023,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21107,
+        "fields": {
+            "answer": 5129,
+            "state": 1026,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21108,
+        "fields": {
+            "answer": 5129,
+            "state": 1035,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21109,
+        "fields": {
+            "answer": 5129,
+            "state": 1041,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21110,
+        "fields": {
+            "answer": 5129,
+            "state": 1042,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21111,
+        "fields": {
+            "answer": 5129,
+            "state": 1048,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 21112,
+        "fields": {
+            "answer": 5129,
+            "state": 1050,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "state_multiplier": 0.1
         }
     }
 ];
@@ -11847,7 +12065,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5127,
             "candidate": 200,
-            "answer_feedback": "The level of Mike Pence's social conservatism is certainly more than most Americans are familiar with."
+            "answer_feedback": "This stance is acceptable to many but it makes people wonder if you are scared of losing support."
         }
     },
     {
@@ -11856,7 +12074,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5128,
             "candidate": 200,
-            "answer_feedback": "The level of Mike Pence's social conservatism is certainly more than most Americans are familiar with."
+            "answer_feedback": "You hold your position from the campaign which might not be the worst thing but you lose support in Liberal regions."
         }
     },
     {
@@ -11865,7 +12083,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5129,
             "candidate": 200,
-            "answer_feedback": "The level of Mike Pence's social conservatism is certainly more than most Americans are familiar with."
+            "answer_feedback": "This hurts you, especially in Arizona. Other very conservative states see a rise in far right party registration."
         }
     },
     {
@@ -11961,7 +12179,7 @@ const _tctEndingDefs = [
         "endingText": "The white house was empty. Why would there be anyone there? There was no point anymore. America was no longer the same. It never would be. Mitt stood alone. The emptiness. The quiet. It was driving him insane. This was supposed to be the moment for him to prove himself. He walked across empty halls. He looked at the portraits hung on the walls. The forgotten presidents. This was his fate. He won it all but would just be forgotten. They would focus on what led to it. Not on him. He walked to the oval office. Not even the vice president was there. He took a deep breath and started writing his note. He wrote for hours, moving to more and more pages. To anyone who would've been there it might look like he's hard at work. The truth was that he was writing a note for every scenario. He thought about al the ways this could end. His mind was empty now, filled with the cheers he had hoped to hear. He knew that things would never be the same. No one cared anymore. No one was surprised that he won. He wasn't chosen because he was wanted but because there was no other choice. Ayers wasn't a candidate. He was a lamb. Mitt felt his hands tightening and tightening as he wrote. The page ripping as the pen broke. Ink smeared the papers. His notes ruined. Mitt looked at it, unfazed. His face was completely blank, nearly robotic. He stood up, pulled the chair to the table and walked out. Out of the office. Out of the White house. Out of America's mind.",
         "endingImage": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.Jy3d0zwAQHA-Whd9E2yEiAHaGL%3Fpid%3DApi&f=1&ipt=c93a44f2ebedbbbe02634b7c21fa124d5f685c8069ce1c2d9d692d95b2f22408&ipo=images",
         "endingHideImage": false,
-        "endingSlidesJson": "[\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 538,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"Emptiness\",\n    \"subtitle\": \"\",\n    \"content\": \"The white house was empty. Why would there be anyone there? There was no point anymore. America was no longer the same. It never would be. Mitt stood alone. The emptiness. The quiet. It was driving him insane. This was supposed to be the moment for him to prove himself. He walked across empty halls. He looked at the portraits hung on the walls. The forgotten presidents. This was his fate. He won it all but would just be forgotten. They would focus on what led to it. Not on him. He walked to the oval office. Not even the vice president was there. He took a deep breath and started writing his note. He wrote for hours, moving to more and more pages. To anyone who would've been there it might look like he's hard at work. The truth was that he was writing a note for every scenario. He thought about al the ways this could end. His mind was empty now, filled with the cheers he had hoped to hear. He knew that things would never be the same. No one cared anymore. No one was surprised that he won. He wasn't chosen because he was wanted but because there was no other choice. Ayers wasn't a candidate. He was a lamb. Mitt felt his hands tightening and tightening as he wrote. The page ripping as the pen broke. Ink smeared the papers. His notes ruined. Mitt looked at it, unfazed. His face was completely blank, nearly robotic. He stood up, pulled the chair to the table and walked out. Out of the office. Out of the White house. Out of America's mind.\",\n    \"image\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.Jy3d0zwAQHA-Whd9E2yEiAHaGL%3Fpid%3DApi&f=1&ipt=c93a44f2ebedbbbe02634b7c21fa124d5f685c8069ce1c2d9d692d95b2f22408&ipo=images\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"has\",\n    \"answerConditionAnswer\": \"20820\",\n    \"answerConditionAnswers\": \"20820\",\n    \"audio\": {\n      \"title\": \"...\",\n      \"artist\": \"-\",\n      \"cover\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.g_gXbXKurCr0AfbCMxx-aQHaE7%3Fr%3D0%26pid%3DApi&f=1&ipt=66b0d12c5f40c1c39a0b911ee1f77e4c076dee74b4c2514686cae23ba3497004&ipo=images\",\n      \"url\": \"https://audio.jukehost.co.uk/019f6f5d-0a3f-7356-8df2-2f28260eeb5d\"\n    }\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 0,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"Yet Another Romney\",\n    \"subtitle\": \"\",\n    \"content\": \"Mitt watched the screen as the projections come in. It was worse than bleak. Mitt clutched his heart as he watched state after state go Democrat. He hoped that at least his religion wouldn't let him down and yet that seemed to be the case too. Utah and Idaho went blue too. Romney was the only man in history to lose every state.\",\n    \"image\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.o6O5tBUsQfI5I4ZUowWMGQHaE8%3Fr%3D0%26pid%3DApi&f=1&ipt=95bdbe53a8bfbda4a941c3a0ba203f0824877942320a8041241bf30704169a96&ipo=images\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"has\",\n    \"answerConditionAnswer\": \"20986\",\n    \"answerConditionAnswers\": \"20986\",\n    \"audio\": {\n      \"title\": \"Horizon\",\n      \"artist\": \"Pawel Blaszczak\",\n      \"cover\": \"https://ia801802.us.archive.org/10/items/dying_light_ost/Cover.jpg?cnt=0\",\n      \"url\": \"https://audio.jukehost.co.uk/019f846e-e2a9-71c5-9268-ab1294a792b2\"\n    }\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 538,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"Mitt Romney's dissapearance\",\n    \"subtitle\": \"\",\n    \"content\": \"That's what the newspapers wrote. That's what was on the front page. It didn't matter. No one cared anymore. Most just sighed as if it was another Tuesday. For many it was. Mitt Romney was supposed to be a god in human clothing at a victory like this. But now. Now people just wanted to forget. Forget the past. Forget the mistakes. Forget America. This was no longer the country they loved. For many life lost its meaning. America was still the same on the outside but inside, it was hollow. It was no longer the same. It was lost.\",\n    \"image\": \"\",\n    \"slideGroup\": \"secondary\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"has\",\n    \"answerConditionAnswer\": \"20820\",\n    \"answerConditionAnswers\": \"20820\"\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 538,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"2036- 20 years of the White House being abandonned\",\n    \"subtitle\": \"\",\n    \"content\": \"Every since Mitt Romney's disappearance in 2016 the White House has been left abandoned. No one wanted it. No one wanted to stay in it. It has been kept up by the new administrations but it is still filled with dust. The outside looks the same. The inside is empty. It has been. For 20 years\",\n    \"image\": \"\",\n    \"slideGroup\": \"extra-3\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\"\n  }\n]",
+        "endingSlidesJson": "[\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 538,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"Emptiness\",\n    \"subtitle\": \"\",\n    \"content\": \"The white house was empty. Why would there be anyone there? There was no point anymore. America was no longer the same. It never would be. Mitt stood alone. The emptiness. The quiet. It was driving him insane. This was supposed to be the moment for him to prove himself. He walked across empty halls. He looked at the portraits hung on the walls. The forgotten presidents. This was his fate. He won it all but would just be forgotten. They would focus on what led to it. Not on him. He walked to the oval office. Not even the vice president was there. He took a deep breath and started writing his note. He wrote for hours, moving to more and more pages. To anyone who would've been there it might look like he's hard at work. The truth was that he was writing a note for every scenario. He thought about al the ways this could end. His mind was empty now, filled with the cheers he had hoped to hear. He knew that things would never be the same. No one cared anymore. No one was surprised that he won. He wasn't chosen because he was wanted but because there was no other choice. Ayers wasn't a candidate. He was a lamb. Mitt felt his hands tightening and tightening as he wrote. The page ripping as the pen broke. Ink smeared the papers. His notes ruined. Mitt looked at it, unfazed. His face was completely blank, nearly robotic. He stood up, pulled the chair to the table and walked out. Out of the office. Out of the White house. Out of America's mind.\",\n    \"image\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.Jy3d0zwAQHA-Whd9E2yEiAHaGL%3Fpid%3DApi&f=1&ipt=c93a44f2ebedbbbe02634b7c21fa124d5f685c8069ce1c2d9d692d95b2f22408&ipo=images\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"has\",\n    \"answerConditionAnswer\": \"20820\",\n    \"answerConditionAnswers\": \"20820\",\n    \"audio\": {\n      \"title\": \"...\",\n      \"artist\": \"-\",\n      \"cover\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.g_gXbXKurCr0AfbCMxx-aQHaE7%3Fr%3D0%26pid%3DApi&f=1&ipt=66b0d12c5f40c1c39a0b911ee1f77e4c076dee74b4c2514686cae23ba3497004&ipo=images\",\n      \"url\": \"https://audio.jukehost.co.uk/019f6f5d-0a3f-7356-8df2-2f28260eeb5d\"\n    }\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 0,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"New Horizon\",\n    \"subtitle\": \"Admiral's America\",\n    \"content\": \"Not even Utah...\",\n    \"image\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.EY-kBti3BCe0idPeKJVPlwHaDb%3Fr%3D0%26pid%3DApi&f=1&ipt=3e540e16e939bb6c887a8da6e3acfceff32f1967ac2b9613fdde744ac11f4094&ipo=images\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"has\",\n    \"answerConditionAnswer\": \"20986\",\n    \"answerConditionAnswers\": \"20986\",\n    \"audio\": {\n      \"title\": \"Horizon\",\n      \"artist\": \"Paweł Błaszczak\",\n      \"cover\": \"https://ia601802.us.archive.org/10/items/dying_light_ost/Cover.jpg?cnt=0\",\n      \"url\": \"https://audio.jukehost.co.uk/019f846e-e2a9-71c5-9268-ab1294a792b2\"\n    }\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 538,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"Mitt Romney's dissapearance\",\n    \"subtitle\": \"\",\n    \"content\": \"That's what the newspapers wrote. That's what was on the front page. It didn't matter. No one cared anymore. Most just sighed as if it was another Tuesday. For many it was. Mitt Romney was supposed to be a god in human clothing at a victory like this. But now. Now people just wanted to forget. Forget the past. Forget the mistakes. Forget America. This was no longer the country they loved. For many life lost its meaning. America was still the same on the outside but inside, it was hollow. It was no longer the same. It was lost.\",\n    \"image\": \"\",\n    \"slideGroup\": \"secondary\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"has\",\n    \"answerConditionAnswer\": \"20820\",\n    \"answerConditionAnswers\": \"20820\"\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 538,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"2036- 20 years of the White House being abandonned\",\n    \"subtitle\": \"\",\n    \"content\": \"Every since Mitt Romney's disappearance in 2016 the White House has been left abandoned. No one wanted it. No one wanted to stay in it. It has been kept up by the new administrations but it is still filled with dust. The outside looks the same. The inside is empty. It has been. For 20 years\",\n    \"image\": \"\",\n    \"slideGroup\": \"extra-3\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\"\n  }\n]",
         "audioTitle": "...",
         "audioArtist": "-",
         "audioCover": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.g_gXbXKurCr0AfbCMxx-aQHaE7%3Fr%3D0%26pid%3DApi&f=1&ipt=66b0d12c5f40c1c39a0b911ee1f77e4c076dee74b4c2514686cae23ba3497004&ipo=images",
@@ -13244,7 +13462,7 @@ campaignTrail_temp.jet_data = [{
             "endingSubtitle": "",
             "endingImage": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.Jy3d0zwAQHA-Whd9E2yEiAHaGL%3Fpid%3DApi&f=1&ipt=c93a44f2ebedbbbe02634b7c21fa124d5f685c8069ce1c2d9d692d95b2f22408&ipo=images",
             "endingText": "The white house was empty. Why would there be anyone there? There was no point anymore. America was no longer the same. It never would be. Mitt stood alone. The emptiness. The quiet. It was driving him insane. This was supposed to be the moment for him to prove himself. He walked across empty halls. He looked at the portraits hung on the walls. The forgotten presidents. This was his fate. He won it all but would just be forgotten. They would focus on what led to it. Not on him. He walked to the oval office. Not even the vice president was there. He took a deep breath and started writing his note. He wrote for hours, moving to more and more pages. To anyone who would've been there it might look like he's hard at work. The truth was that he was writing a note for every scenario. He thought about al the ways this could end. His mind was empty now, filled with the cheers he had hoped to hear. He knew that things would never be the same. No one cared anymore. No one was surprised that he won. He wasn't chosen because he was wanted but because there was no other choice. Ayers wasn't a candidate. He was a lamb. Mitt felt his hands tightening and tightening as he wrote. The page ripping as the pen broke. Ink smeared the papers. His notes ruined. Mitt looked at it, unfazed. His face was completely blank, nearly robotic. He stood up, pulled the chair to the table and walked out. Out of the office. Out of the White house. Out of America's mind.",
-            "endingSlidesJson": "[\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 538,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"Emptiness\",\n    \"subtitle\": \"\",\n    \"content\": \"The white house was empty. Why would there be anyone there? There was no point anymore. America was no longer the same. It never would be. Mitt stood alone. The emptiness. The quiet. It was driving him insane. This was supposed to be the moment for him to prove himself. He walked across empty halls. He looked at the portraits hung on the walls. The forgotten presidents. This was his fate. He won it all but would just be forgotten. They would focus on what led to it. Not on him. He walked to the oval office. Not even the vice president was there. He took a deep breath and started writing his note. He wrote for hours, moving to more and more pages. To anyone who would've been there it might look like he's hard at work. The truth was that he was writing a note for every scenario. He thought about al the ways this could end. His mind was empty now, filled with the cheers he had hoped to hear. He knew that things would never be the same. No one cared anymore. No one was surprised that he won. He wasn't chosen because he was wanted but because there was no other choice. Ayers wasn't a candidate. He was a lamb. Mitt felt his hands tightening and tightening as he wrote. The page ripping as the pen broke. Ink smeared the papers. His notes ruined. Mitt looked at it, unfazed. His face was completely blank, nearly robotic. He stood up, pulled the chair to the table and walked out. Out of the office. Out of the White house. Out of America's mind.\",\n    \"image\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.Jy3d0zwAQHA-Whd9E2yEiAHaGL%3Fpid%3DApi&f=1&ipt=c93a44f2ebedbbbe02634b7c21fa124d5f685c8069ce1c2d9d692d95b2f22408&ipo=images\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"has\",\n    \"answerConditionAnswer\": \"20820\",\n    \"answerConditionAnswers\": \"20820\",\n    \"audio\": {\n      \"title\": \"...\",\n      \"artist\": \"-\",\n      \"cover\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.g_gXbXKurCr0AfbCMxx-aQHaE7%3Fr%3D0%26pid%3DApi&f=1&ipt=66b0d12c5f40c1c39a0b911ee1f77e4c076dee74b4c2514686cae23ba3497004&ipo=images\",\n      \"url\": \"https://audio.jukehost.co.uk/019f6f5d-0a3f-7356-8df2-2f28260eeb5d\"\n    }\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 0,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"Yet Another Romney\",\n    \"subtitle\": \"\",\n    \"content\": \"Mitt watched the screen as the projections come in. It was worse than bleak. Mitt clutched his heart as he watched state after state go Democrat. He hoped that at least his religion wouldn't let him down and yet that seemed to be the case too. Utah and Idaho went blue too. Romney was the only man in history to lose every state.\",\n    \"image\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.o6O5tBUsQfI5I4ZUowWMGQHaE8%3Fr%3D0%26pid%3DApi&f=1&ipt=95bdbe53a8bfbda4a941c3a0ba203f0824877942320a8041241bf30704169a96&ipo=images\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"has\",\n    \"answerConditionAnswer\": \"20986\",\n    \"answerConditionAnswers\": \"20986\",\n    \"audio\": {\n      \"title\": \"Horizon\",\n      \"artist\": \"Pawel Blaszczak\",\n      \"cover\": \"https://ia801802.us.archive.org/10/items/dying_light_ost/Cover.jpg?cnt=0\",\n      \"url\": \"https://audio.jukehost.co.uk/019f846e-e2a9-71c5-9268-ab1294a792b2\"\n    }\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 538,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"Mitt Romney's dissapearance\",\n    \"subtitle\": \"\",\n    \"content\": \"That's what the newspapers wrote. That's what was on the front page. It didn't matter. No one cared anymore. Most just sighed as if it was another Tuesday. For many it was. Mitt Romney was supposed to be a god in human clothing at a victory like this. But now. Now people just wanted to forget. Forget the past. Forget the mistakes. Forget America. This was no longer the country they loved. For many life lost its meaning. America was still the same on the outside but inside, it was hollow. It was no longer the same. It was lost.\",\n    \"image\": \"\",\n    \"slideGroup\": \"secondary\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"has\",\n    \"answerConditionAnswer\": \"20820\",\n    \"answerConditionAnswers\": \"20820\"\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 538,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"2036- 20 years of the White House being abandonned\",\n    \"subtitle\": \"\",\n    \"content\": \"Every since Mitt Romney's disappearance in 2016 the White House has been left abandoned. No one wanted it. No one wanted to stay in it. It has been kept up by the new administrations but it is still filled with dust. The outside looks the same. The inside is empty. It has been. For 20 years\",\n    \"image\": \"\",\n    \"slideGroup\": \"extra-3\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\"\n  }\n]",
+            "endingSlidesJson": "[\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 538,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"Emptiness\",\n    \"subtitle\": \"\",\n    \"content\": \"The white house was empty. Why would there be anyone there? There was no point anymore. America was no longer the same. It never would be. Mitt stood alone. The emptiness. The quiet. It was driving him insane. This was supposed to be the moment for him to prove himself. He walked across empty halls. He looked at the portraits hung on the walls. The forgotten presidents. This was his fate. He won it all but would just be forgotten. They would focus on what led to it. Not on him. He walked to the oval office. Not even the vice president was there. He took a deep breath and started writing his note. He wrote for hours, moving to more and more pages. To anyone who would've been there it might look like he's hard at work. The truth was that he was writing a note for every scenario. He thought about al the ways this could end. His mind was empty now, filled with the cheers he had hoped to hear. He knew that things would never be the same. No one cared anymore. No one was surprised that he won. He wasn't chosen because he was wanted but because there was no other choice. Ayers wasn't a candidate. He was a lamb. Mitt felt his hands tightening and tightening as he wrote. The page ripping as the pen broke. Ink smeared the papers. His notes ruined. Mitt looked at it, unfazed. His face was completely blank, nearly robotic. He stood up, pulled the chair to the table and walked out. Out of the office. Out of the White house. Out of America's mind.\",\n    \"image\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.Jy3d0zwAQHA-Whd9E2yEiAHaGL%3Fpid%3DApi&f=1&ipt=c93a44f2ebedbbbe02634b7c21fa124d5f685c8069ce1c2d9d692d95b2f22408&ipo=images\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"has\",\n    \"answerConditionAnswer\": \"20820\",\n    \"answerConditionAnswers\": \"20820\",\n    \"audio\": {\n      \"title\": \"...\",\n      \"artist\": \"-\",\n      \"cover\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.g_gXbXKurCr0AfbCMxx-aQHaE7%3Fr%3D0%26pid%3DApi&f=1&ipt=66b0d12c5f40c1c39a0b911ee1f77e4c076dee74b4c2514686cae23ba3497004&ipo=images\",\n      \"url\": \"https://audio.jukehost.co.uk/019f6f5d-0a3f-7356-8df2-2f28260eeb5d\"\n    }\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 0,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"New Horizon\",\n    \"subtitle\": \"Admiral's America\",\n    \"content\": \"Not even Utah...\",\n    \"image\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.EY-kBti3BCe0idPeKJVPlwHaDb%3Fr%3D0%26pid%3DApi&f=1&ipt=3e540e16e939bb6c887a8da6e3acfceff32f1967ac2b9613fdde744ac11f4094&ipo=images\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"has\",\n    \"answerConditionAnswer\": \"20986\",\n    \"answerConditionAnswers\": \"20986\",\n    \"audio\": {\n      \"title\": \"Horizon\",\n      \"artist\": \"Paweł Błaszczak\",\n      \"cover\": \"https://ia601802.us.archive.org/10/items/dying_light_ost/Cover.jpg?cnt=0\",\n      \"url\": \"https://audio.jukehost.co.uk/019f846e-e2a9-71c5-9268-ab1294a792b2\"\n    }\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 538,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"Mitt Romney's dissapearance\",\n    \"subtitle\": \"\",\n    \"content\": \"That's what the newspapers wrote. That's what was on the front page. It didn't matter. No one cared anymore. Most just sighed as if it was another Tuesday. For many it was. Mitt Romney was supposed to be a god in human clothing at a victory like this. But now. Now people just wanted to forget. Forget the past. Forget the mistakes. Forget America. This was no longer the country they loved. For many life lost its meaning. America was still the same on the outside but inside, it was hollow. It was no longer the same. It was lost.\",\n    \"image\": \"\",\n    \"slideGroup\": \"secondary\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"has\",\n    \"answerConditionAnswer\": \"20820\",\n    \"answerConditionAnswers\": \"20820\"\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 538,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"2036- 20 years of the White House being abandonned\",\n    \"subtitle\": \"\",\n    \"content\": \"Every since Mitt Romney's disappearance in 2016 the White House has been left abandoned. No one wanted it. No one wanted to stay in it. It has been kept up by the new administrations but it is still filled with dust. The outside looks the same. The inside is empty. It has been. For 20 years\",\n    \"image\": \"\",\n    \"slideGroup\": \"extra-3\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\"\n  }\n]",
             "audioTitle": "...",
             "audioArtist": "-",
             "audioCover": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.g_gXbXKurCr0AfbCMxx-aQHaE7%3Fr%3D0%26pid%3DApi&f=1&ipt=66b0d12c5f40c1c39a0b911ee1f77e4c076dee74b4c2514686cae23ba3497004&ipo=images",
@@ -13264,3 +13482,4 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
+
