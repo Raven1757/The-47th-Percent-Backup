@@ -67,7 +67,7 @@ campaignTrail_temp.questions_json = [
         "model": "campaign_trail.question",
         "pk": 1022,
         "fields": {
-            "description": "What do you have to say to conservatives who doubt your commitment to their cause in this election? Do you have any gestures to make?"
+            "description": "(Unfinished)Ever since the Snowden whistleblowing, congress has been more divided than ever. It's clear that the population wants the Patriot Act gone, gutted. You need to find a way to deal with everything. Your options are limited. They range from the basic repeal and replace all the way to pardoning Snowden, a very radical and frankly ridiculous idea. What can you do to help your standing with the population?"
         }
     },
     {
@@ -637,7 +637,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5071,
         "fields": {
             "question": 1022,
-            "description": "I've been misrepresented a lot, you know. It's funny actually, I've always been a conservative person. A lot of people have known that from the start."
+            "description": "The nation"
         }
     },
     {
@@ -12758,12 +12758,12 @@ cyoAdventure = function (a) {
 
     // [JETS_CYOA_VARIABLE_EFFECTS_START]
     // -5 GovernmentApproval
-    if ([20770, 5031].includes(ans)) {
+    if (ans == 20770) {
         GovernmentApproval -= 5;
     }
 
     // +1 Wins
-    if ([20770, 20769, 5021, 5020, 5030].includes(ans)) {
+    if ([20770, 20769, 5021, 5020].includes(ans)) {
         Wins += 1;
     }
 
@@ -12805,16 +12805,6 @@ cyoAdventure = function (a) {
     // -2 GovernmentApproval
     if ([5023, 20748].includes(ans)) {
         GovernmentApproval -= 2;
-    }
-
-    // -2 Americandivision
-    if ([5031, 5030].includes(ans)) {
-        Americandivision -= 2;
-    }
-
-    // -10 GovernmentApproval
-    if (ans == 5032) {
-        GovernmentApproval -= 10;
     }
 
     // +1 RussianAgression
@@ -13380,27 +13370,6 @@ campaignTrail_temp.jet_data = [{
             "operation": "subtract",
             "amount": 1
         },
-        "20815": {
-            "id": 20815,
-            "answer": 5031,
-            "variable": "GovernmentApproval",
-            "operation": "subtract",
-            "amount": 5
-        },
-        "20816": {
-            "id": 20816,
-            "answer": 5031,
-            "variable": "Americandivision",
-            "operation": "subtract",
-            "amount": 2
-        },
-        "20819": {
-            "id": 20819,
-            "answer": 5032,
-            "variable": "GovernmentApproval",
-            "operation": "subtract",
-            "amount": 10
-        },
         "20820": {
             "id": 20820,
             "answer": 5032,
@@ -13414,20 +13383,6 @@ campaignTrail_temp.jet_data = [{
             "variable": "GovernmentApproval",
             "operation": "subtract",
             "amount": 2
-        },
-        "20823": {
-            "id": 20823,
-            "answer": 5030,
-            "variable": "Americandivision",
-            "operation": "subtract",
-            "amount": 2
-        },
-        "20824": {
-            "id": 20824,
-            "answer": 5030,
-            "variable": "Wins",
-            "operation": "add",
-            "amount": 1
         },
         "20827": {
             "id": 20827,
