@@ -12842,27 +12842,7 @@ cyoAdventure = function (a) {
 function onGameWindowChanged(mutationList, observer) {
 updateQuestionBanner();
 }
-const observer = new MutationObserver(onGameWindowChanged);
-observer.observe(targetNode, config);
-function updateQuestionBanner() {
-let questionBanner = document.getElementById("campaign_sign");
-if(!questionBanner || questionBanner.nodeName != "DIV") return;
-let img = document.createElement('https://i.imgur.com/z9lpi57.jpeg');
-if(ans == 5003){
-img.src = 'https://i.imgur.com/z9lpi57.jpeg';
-}
-else if(ans == 5004){
-img.src = 'https://i.imgur.com/qbNUl6b.png';
-}
-else if(ans == 20708){
-img.src = 'https://i.imgur.com/zLEcL0s.png';
-}
-else if(ans == 20720){
-img.src = 'https://i.imgur.com/NrvXZ4v.png';
-}
-questionBanner.replaceWith(img);
 
-}
 endingPicker = (out, totv, aa, quickstats) => {
     const finalStates = Array.isArray(campaignTrail_temp.final_state_results) ? campaignTrail_temp.final_state_results : [];
     const stateWinnersByAbbr = new Map(
@@ -13450,3 +13430,24 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
+const observer = new MutationObserver(onGameWindowChanged);
+observer.observe(targetNode, config);
+function updateQuestionBanner() {
+let questionBanner = document.getElementById("campaign_sign");
+if(!questionBanner || questionBanner.nodeName != "DIV") return;
+let img = document.createElement('img');
+if(ans == 5003){
+img.src = 'https://i.imgur.com/z9lpi57.jpeg';
+}
+else if(ans == 5004){
+img.src = 'https://i.imgur.com/qbNUl6b.png';
+}
+else if(ans == 20708){
+img.src = 'https://i.imgur.com/zLEcL0s.png';
+}
+else if(ans == 20720){
+img.src = 'https://i.imgur.com/NrvXZ4v.png';
+}
+questionBanner.replaceWith(img);
+
+}
