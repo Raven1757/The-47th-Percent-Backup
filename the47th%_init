@@ -68,7 +68,7 @@ campaignTrail_temp.candidate_json = [
             "state": "Massachussets",
             "priority": 1,
             "description": "<p>Willard Mitt Romney has had a surprisingly successful career in politics. He has ran both successfully and unsuccessfully in his home state of Massachusetts. He nearly dethroned Ted Kennedy in what was his first ever race. Romney has held a high standard for himself and as such never gave up on what was considered a long shot candidacy against the now popular Barrack Obama in 2012. Everything came to a head in Colorado and soon gave him just enough Electors to win the presidency.</p> \n<p>Things have changed now. Things are real. Romney is now at the helm and needs to focus to keep himself afloat. He is now the leader of the free world and as such needs to work hard to keep it free. Legitamacy might however be the least of his problems, the economy is still in the gutter and foreign affairs are in a state of flux. The nation has never been as divided as it is now and he is the only man to fix it all.</p> ",
-            "color_hex": "#63040a",
+            "color_hex": "#740f16",
             "secondary_color_hex": "#9c1b1b",
             "is_active": 1,
             "image_url": "https://i.imgur.com/VaqFOaM.jpeg",
@@ -114,8 +114,8 @@ campaignTrail_temp.candidate_json = [
             "state": "New Mexico",
             "priority": 3,
             "description": "'",
-            "color_hex": "#797907",
-            "secondary_color_hex": "#9e9e2d",
+            "color_hex": "#9e9e1b",
+            "secondary_color_hex": "#d3d336",
             "is_active": 0,
             "image_url": "'",
             "electoral_victory_message": "'",
@@ -1842,7 +1842,7 @@ tooltipList = [
     {searchString: "Haley", explanationText: "<img src=> New governor,may be useful"},  
     {searchString: "Sanders", explanationText: "<img src=> A 'communist'"},
     {searchString: "Ayers", explanationText: "<img src=https://i.imgur.com/nSX3MDh.jpeg> What the fuck is happening to America..."},
-    {searchString: "Russia", explanationText: "<img src=https://imgur.com/zamcmgS> America's biggest ennemy"}
+    {searchString: "Russia", explanationText: "<img src=https://i.imgur.com/zamcmgS.jpeg> America's biggest ennemy"}
 ];
 // The data visualizer from 2012LBM
 // many thanks to routevenus for their work here!
