@@ -12839,20 +12839,6 @@ cyoAdventure = function (a) {
             campaignTrail_temp.running_mate_last_name="Haley"
             campaignTrail_temp.running_mate_image_url="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.qnx0kDxlhrOmcxYUbq2wTgHaJI%3Fpid%3DApi&f=1&ipt=a9f34b03e96a88912ea6ef5869534901b3720b77f7cb15582ee0b6440843bc69&ipo=images"
 }
-
-endingPicker = (out, totv, aa, quickstats) => {
-    const finalStates = Array.isArray(campaignTrail_temp.final_state_results) ? campaignTrail_temp.final_state_results : [];
-    const stateWinnersByAbbr = new Map(
-      finalStates.map(st => [st.abbr, st.result?.candidate])
-    );
-    const playerWonStates = (...abbrs) => abbrs.every(abbr => stateWinnersByAbbr.get(abbr) === campaignTrail_temp.candidate_id);
-
-if (quickstats[0] >= 270  && campaignTrail_temp.player_answers.includes(20820)) {
-    unlockAchievement("Make a New Deseret");
-    }
-
-};
-}
 function onGameWindowChanged(mutationList, observer) {
 updateQuestionBanner();
 }
@@ -12861,7 +12847,7 @@ observer.observe(targetNode, config);
 function updateQuestionBanner() {
 let questionBanner = document.getElementById("campaign_sign");
 if(!questionBanner || questionBanner.nodeName != "DIV") return;
-let img = document.createElement('img');
+let img = document.createElement('https://i.imgur.com/z9lpi57.jpeg');
 if(ans == 5003){
 img.src = 'https://i.imgur.com/z9lpi57.jpeg';
 }
@@ -12876,7 +12862,21 @@ img.src = 'https://i.imgur.com/NrvXZ4v.png';
 }
 questionBanner.replaceWith(img);
 
-}function switcheroo1() {
+}
+endingPicker = (out, totv, aa, quickstats) => {
+    const finalStates = Array.isArray(campaignTrail_temp.final_state_results) ? campaignTrail_temp.final_state_results : [];
+    const stateWinnersByAbbr = new Map(
+      finalStates.map(st => [st.abbr, st.result?.candidate])
+    );
+    const playerWonStates = (...abbrs) => abbrs.every(abbr => stateWinnersByAbbr.get(abbr) === campaignTrail_temp.candidate_id);
+
+if (quickstats[0] >= 270  && campaignTrail_temp.player_answers.includes(20820)) {
+    unlockAchievement("Make a New Deseret");
+    }
+
+};
+}
+function switcheroo1() {
         var id = e.candidate_json.map(p=>p.pk).indexOf(78)
         e.candidate_json[id].fields.first_name = "Hillary"
         e.candidate_json[id].fields.last_name = "Clinton"
@@ -13088,7 +13088,7 @@ applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
         });
 
         content.innerHTML = `
-            <h3>Campaign Data</h3>
+            <h3>Romney's Kingdom</h3>
             <div class="stats-list">${lines.join("<br>")}</div>
         `;
     }
@@ -13147,7 +13147,7 @@ applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
 
         const btn = document.createElement("button");
         btn.id = "btn_game_stats";
-        btn.textContent = "Campaign Data";
+        btn.textContent = "Romney's Kingdom";
         btn.addEventListener("click", (e) => {
             e.preventDefault();
             toggleGameStatsPopup();
