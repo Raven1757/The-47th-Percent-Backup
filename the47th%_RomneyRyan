@@ -12839,6 +12839,19 @@ cyoAdventure = function (a) {
             campaignTrail_temp.running_mate_last_name="Haley"
             campaignTrail_temp.running_mate_image_url="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.qnx0kDxlhrOmcxYUbq2wTgHaJI%3Fpid%3DApi&f=1&ipt=a9f34b03e96a88912ea6ef5869534901b3720b77f7cb15582ee0b6440843bc69&ipo=images"
 }
+
+endingPicker = (out, totv, aa, quickstats) => {
+    const finalStates = Array.isArray(campaignTrail_temp.final_state_results) ? campaignTrail_temp.final_state_results : [];
+    const stateWinnersByAbbr = new Map(
+      finalStates.map(st => [st.abbr, st.result?.candidate])
+    );
+    const playerWonStates = (...abbrs) => abbrs.every(abbr => stateWinnersByAbbr.get(abbr) === campaignTrail_temp.candidate_id);
+
+if (quickstats[0] >= 270  && campaignTrail_temp.player_answers.includes(20820)) {
+    unlockAchievement("Make a New Deseret");
+    }
+
+};
 }
 function onGameWindowChanged(mutationList, observer) {
 updateQuestionBanner();
@@ -12901,7 +12914,7 @@ questionBanner.replaceWith(img);
         var id = e.candidate_json.map(p=>p.pk).indexOf(78)
         e.candidate_json[id].fields.first_name = "Barrack Hussein"
         e.candidate_json[id].fields.last_name = "Obama"
-        e.candidate_json[id].fields.color_hex = "#2e0c36"
+        e.candidate_json[id].fields.color_hex = "#32083b"
 
     }
     function switcheroo7() {
@@ -13437,4 +13450,3 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
-
