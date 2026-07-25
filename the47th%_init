@@ -1841,7 +1841,8 @@ tooltipList = [
     {searchString: "Christie", explanationText: "<img src=> Pufferfish"},
     {searchString: "Haley", explanationText: "<img src=> New governor,may be useful"},  
     {searchString: "Sanders", explanationText: "<img src=> A 'communist'"},
-    {searchString: "Ayers", explanationText: "<img src=https://i.imgur.com/nSX3MDh.jpeg> What the fuck is happening to America..."}
+    {searchString: "Ayers", explanationText: "<img src=https://i.imgur.com/nSX3MDh.jpeg> What the fuck is happening to America..."},
+    {searchString: "Russia", explanationText: "<img src=https://imgur.com/zamcmgS> America's biggest ennemy"}
 ];
 // The data visualizer from 2012LBM
 // many thanks to routevenus for their work here!
