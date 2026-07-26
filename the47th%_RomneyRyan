@@ -12925,9 +12925,9 @@ function switcheroo1() {
     }
     function switcheroo4() {
         var id = e.candidate_json.map(p=>p.pk).indexOf(78)
-        e.candidate_json[id].fields.first_name = "Andrew"
-        e.candidate_json[id].fields.last_name = "Cuomo"
-        e.candidate_json[id].fields.color_hex = "#313642"
+        e.candidate_json[id].fields.first_name = "Jim"
+        e.candidate_json[id].fields.last_name = "Webb"
+        e.candidate_json[id].fields.color_hex = "#565f74"
 
     }
     function switcheroo5() {
@@ -12939,20 +12939,42 @@ function switcheroo1() {
     }
     function switcheroo6() {
         var id = e.candidate_json.map(p=>p.pk).indexOf(78)
-        e.candidate_json[id].fields.first_name = "Barrack Hussein"
-        e.candidate_json[id].fields.last_name = "Obama"
-        e.candidate_json[id].fields.color_hex = "#32083b"
+        e.candidate_json[id].fields.first_name = "William"
+        e.candidate_json[id].fields.last_name = "H. McRaven"
+        e.candidate_json[id].fields.color_hex = "#34043f"
 
     }
     function switcheroo7() {
         var id = e.candidate_json.map(p=>p.pk).indexOf(78)
-        e.candidate_json[id].fields.first_name = "Sherrod"
-        e.candidate_json[id].fields.last_name = "Brown"
+        e.candidate_json[id].fields.first_name = "Julian"
+        e.candidate_json[id].fields.last_name = "Castro"
         e.candidate_json[id].fields.color_hex = "#0d349e"
+        
+    } 
+    function switcheroo8() {
+        var id = e.candidate_json.map(p=>p.pk).indexOf(78)
+        e.candidate_json[id].fields.first_name = "Joe"
+        e.candidate_json[id].fields.last_name = "Manchin"
+        e.candidate_json[id].fields.color_hex = "#926510"
         var id = campaignTrail_temp.candidate_json.map(p=>p.pk).indexOf(77)
-        campaignTrail_temp.candidate_json[id].fields.color_hex = "#8f3838"
+        campaignTrail_temp.candidate_json[id].fields.color_hex = "#7c0d41"
 
     }
+    function switcheroo9() {
+        var id = e.candidate_json.map(p=>p.pk).indexOf(78)
+        e.candidate_json[id].fields.first_name = "Brian"
+        e.candidate_json[id].fields.last_name = "Schweitzer"
+        e.candidate_json[id].fields.color_hex = "#0d349e"
+
+    }
+    function switcheroo10() {
+        var id = e.candidate_json.map(p=>p.pk).indexOf(78)
+        e.candidate_json[id].fields.first_name = "Martin"
+        e.candidate_json[id].fields.last_name = "O'Malley"
+        e.candidate_json[id].fields.color_hex = "#6c6179"
+
+    }
+
 
 function getTooltips(str) {
     let matches = [];
