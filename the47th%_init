@@ -1269,14 +1269,44 @@ setupMusicPlayer();
 
 campaignTrail_temp.achievements = {
   "Make a New Deseret": {
-    "image": "https://imgur.com/IYGxUD1",
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/IYGxUD1.png",
     "description": "Win it all",
     "cannotBeCheated": true
   },
   "American Nightmare": {
-    "image": "https://imgur.com/rTCNA7E",
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/rTCNA7E.png",
     "description": "See the enemy lose again",
     "cannotBeCheated": true
+  },
+  "Bern out the revolution":{ 
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/Bernie", 
+    "description": "Beat the Revolutionary", 
+    "cannotBeCheated": true 
+  }, 
+  "Eternal Malarkey": { 
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/No%20Malarkey", 
+    "description": "Beat the Vice President", 
+    "cannotBeCheated": true 
+  }, 
+  "I'm Against her":{ 
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/I'm%20Against%20Her", 
+    "description": "Beat the only one of her kind", 
+    "cannotBeCheated": true 
+  }, 
+  "Chop the mountain man":{ 
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/Chop%20the%20mountain%20man", 
+    "description": "Beat the man from the mountains", 
+    "cannotBeCheated": true 
+  }, 
+  "Beat who?":{ 
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/Beat%20who%3F", 
+    "description": "Beat the unkown from Maryland", 
+    "cannotBeCheated": true 
+  },
+  "Spider's Webb":{
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/Spider's%20Webb",
+    "description": "Beat the Webhead from Virginia",
+    "cannotBeCheated": true 
   }
 }
 
