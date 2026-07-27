@@ -82,51 +82,6 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 201,
-        "fields": {
-            "first_name": "The",
-            "last_name": "Democrats",
-            "election": 20,
-            "party": "Democrat",
-            "state": "New York",
-            "priority": 2,
-            "description": "<p>As expected, Hillary Clinton has carried her party's nomination, and now faces an unexpected opponent in Donald Trump. She was traditionally known as a mainstream Democrat, but tacked significantly to the left during the primary campaign. Clinton enters the general election in a strong position, but she'll be under relentless attack on a number of fronts. Can she make the case that she truly in touch with the American people -- or that Trump would be an even worse option?</p>",
-            "color_hex": "#011b61",
-            "secondary_color_hex": "#0d458d",
-            "is_active": 0,
-            "image_url": "https://www.jetsimon.com/public/static/images/hillary-clinton-2016.jpg",
-            "electoral_victory_message": "<h3>Congratulations! You have won the 2016 election.</h3><p>In spite of a hard-fought challenge from Donald Trump, you have become the first woman elected to serve as President.</p><p>On the political front, it is unclear how much of your agenda you will be able to push forward with the current Congress. Hopefully your victory has helped Democrats further down the ballot. Start packing and prepare to move back into the White House!</p>",
-            "electoral_loss_message": "<h3>Sorry! You have lost the 2016 election.</h3><p>Many of your supporters are despondent that you have faltered to the likes of Donald Trump. Many in the left wing of the party are furious that you pushed their candidate aside, only to lose. Time will tell how Trump operates as President. As for you, a long and sometimes ambiguous political career seems to be coming to its end.</p>",
-            "no_electoral_majority_message": "<h3>Sorry! You have lost the 2016 election.</h3><p>No candidate secured a majority in the Electoral College. However, the Republicans won a majority in Congress and will elevate Trump to the Presidency. Time will tell how things go in that regard. As for you, a long and sometimes ambiguous political career seems to be coming to its end.</p>",
-            "description_as_running_mate": "'",
-            "candidate_score": 1,
-            "running_mate": false
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 202,
-        "fields": {
-            "first_name": "The",
-            "last_name": "Libertarians",
-            "election": 20,
-            "party": "Libertarian",
-            "state": "New Mexico",
-            "priority": 3,
-            "description": "'",
-            "color_hex": "#9e9e1b",
-            "secondary_color_hex": "#d3d336",
-            "is_active": 0,
-            "image_url": "'",
-            "electoral_victory_message": "'",
-            "electoral_loss_message": "'",
-            "no_electoral_majority_message": "'",
-            "description_as_running_mate": "'",
-            "candidate_score": 1,
-            "running_mate": false
-    }},
-    {
-        "model": "campaign_trail.candidate",
         "pk": 204,
         "fields": {
             "first_name": "Paul",
@@ -170,19 +125,74 @@ campaignTrail_temp.candidate_json = [
             "candidate_score": 1,
             "running_mate": false
         }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 205,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Democrats",
+            "election": 20,
+            "party": "Democrat",
+            "state": "New York",
+            "priority": 1,
+            "description": "Candidate description here.",
+            "color_hex": "#011b61",
+            "secondary_color_hex": "#0d458d",
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 206,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Libertarians",
+            "election": 20,
+            "party": "Libertarian",
+            "state": "New Mexico",
+            "priority": 1,
+            "description": "Candidate description here.",
+            "color_hex": "#9e9e1b",
+            "secondary_color_hex": "#d3d336",
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
     }
 ];
 
-campaignTrail_temp.running_mate_json = [];
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 1,
+        "fields": {
+            "candidate": 200,
+            "running_mate": 204
+        }
+    }
+];
 
 campaignTrail_temp.opponents_default_json = [
     {
         "election": 20,
         "candidates": [
             200,
-            201,
-            202,
-            203
+            203,
+            205,
+            206
         ]
     }
 ];
@@ -192,9 +202,9 @@ campaignTrail_temp.opponents_weighted_json = [
         "election": 20,
         "candidates": [
             200,
-            201,
-            202,
-            203
+            203,
+            205,
+            206
         ]
     }
 ];
@@ -1256,6 +1266,7 @@ function setupMusicPlayer() {
 }
 
 setupMusicPlayer();
+
 campaignTrail_temp.achievements = {
   "Make a New Deseret": {
     "image": "https://imgur.com/IYGxUD1",
@@ -1267,9 +1278,9 @@ campaignTrail_temp.achievements = {
     "description": "See the enemy lose again",
     "cannotBeCheated": true
   }
+}
 
-};
-  const style = document.createElement("style");
+const style = document.createElement("style");
 style.textContent = `
 #player {
     border: 3px solid #C9C9C9; /* Add your desired border style */
