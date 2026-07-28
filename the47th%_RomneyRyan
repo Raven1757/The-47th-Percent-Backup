@@ -12970,7 +12970,7 @@ function switcheroo1() {
         e.candidate_json[id].fields.first_name = "Joe"
         e.candidate_json[id].fields.last_name = "Manchin"
         e.candidate_json[id].fields.color_hex = "#926510"
-        var id = campaignTrail_temp.candidate_json.map(p=>p.pk).indexOf(77)
+        var id = campaignTrail_temp.candidate_json.map(p=>p.pk).indexOf(200)
         campaignTrail_temp.candidate_json[id].fields.color_hex = "#7c0d41"
 
     }
@@ -12988,7 +12988,18 @@ function switcheroo1() {
         e.candidate_json[id].fields.color_hex = "#6c6179"
 
     }
+endingPicker = (out, totv, aa, quickstats) => {
+    const finalStates = Array.isArray(campaignTrail_temp.final_state_results) ? campaignTrail_temp.final_state_results : [];
+    const stateWinnersByAbbr = new Map(
+      finalStates.map(st => [st.abbr, st.result?.candidate])
+    );
+    const playerWonStates = (...abbrs) => abbrs.every(abbr => stateWinnersByAbbr.get(abbr) === campaignTrail_temp.candidate_id);
 
+if (quickstats[0] >= 538) {
+    unlockAchievement("Make a New Deseret");
+    }
+
+};
 
 function getTooltips(str) {
     let matches = [];
