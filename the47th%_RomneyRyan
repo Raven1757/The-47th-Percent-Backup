@@ -12898,15 +12898,15 @@ cyoAdventure = function (a) {
     // [JETS_CYOA_VARIABLE_EFFECTS_END]
     if(ans == 5004){
             campaignTrail_temp.running_mate_last_name="Pawlenty"
-            campaignTrail_temp.running_mate_image_url="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.qsD72i6KK_Gns0IUXwUNYAHaJf%3Fr%3D0%26pid%3DApi&f=1&ipt=6909f0fe2df64b557b30b59e7aad698af9eaa8570fc4928323c158e760e33997&ipo=images"
+            campaignTrail_temp.running_mate_image_url="https://i.imgur.com/7gJazbW.jpeg"
 }
      if(ans == 20708){
             campaignTrail_temp.running_mate_last_name="Christie"
-            campaignTrail_temp.running_mate_image_url="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthfvnext.bing.com%2Fth%2Fid%2FOIP.tN9e7tapsbtnLMaUY8EYxgHaKX%3Fr%3D0%26cb%3Dthfvnextfalcon4%26pid%3DApi&f=1&ipt=d1d7fcfea7993034e5991b2ae5d039774348b432f4b98e1d2b769bd59d99c369&ipo=images"
+            campaignTrail_temp.running_mate_image_url="https://i.imgur.com/u8PS5Gy.jpeg"
 }
      if(ans == 20720){
             campaignTrail_temp.running_mate_last_name="Haley"
-            campaignTrail_temp.running_mate_image_url="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.qnx0kDxlhrOmcxYUbq2wTgHaJI%3Fpid%3DApi&f=1&ipt=a9f34b03e96a88912ea6ef5869534901b3720b77f7cb15582ee0b6440843bc69&ipo=images"
+            campaignTrail_temp.running_mate_image_url="https://i.imgur.com/zK1KnXp.jpeg"
 }
 
 const observer = new MutationObserver(onGameWindowChanged);
