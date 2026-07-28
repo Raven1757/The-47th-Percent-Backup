@@ -12902,21 +12902,15 @@ cyoAdventure = function (a) {
 }
      if(ans == 20708){
             campaignTrail_temp.running_mate_last_name="Christie"
-            campaignTrail_temp.running_mate_image_url="https://i.imgur.com/u8PS5Gy.jpeg"
+            campaignTrail_temp.running_mate_image_url="https://i.imgur.com/tNjSKpY.jpeg"
 }
      if(ans == 20720){
             campaignTrail_temp.running_mate_last_name="Haley"
             campaignTrail_temp.running_mate_image_url="https://i.imgur.com/zK1KnXp.jpeg"
 }
 
-const observer = new MutationObserver(onGameWindowChanged);
-observer.observe(targetNode, config);
-
-function onGameWindowChanged(mutationList, observer) {
-updateQuestionBanner();
 }
-
-}
+// Democratic Nominees
 function switcheroo1() {
         var id = e.candidate_json.map(p=>p.pk).indexOf(205)
         e.candidate_json[id].fields.first_name = "Hillary"
@@ -12930,6 +12924,10 @@ function switcheroo1() {
         campaignTrail_temp.candidate_json[id].fields.color_hex = "#4b0101"
         var id = campaignTrail_temp.candidate_json.map(p=>p.pk).indexOf(200)
         campaignTrail_temp.candidate_json[id].fields.color_hex = "#03123d"
+        var id = e.candidate_json.map(p=>p.pk).indexOf(203)
+        e.candidate_json[id].fields.first_name = "Lawrence"
+        e.candidate_json[id].fields.last_name = "Lessig"
+        e.candidate_json[id].fields.color_hex = "#168897"
     }
     function switcheroo3() {
         var id = e.candidate_json.map(p=>p.pk).indexOf(205)
@@ -12942,7 +12940,10 @@ function switcheroo1() {
         e.candidate_json[id].fields.first_name = "Jim"
         e.candidate_json[id].fields.last_name = "Webb"
         e.candidate_json[id].fields.color_hex = "#565f74"
-
+        var id = e.candidate_json.map(p=>p.pk).indexOf(203)
+        e.candidate_json[id].fields.first_name = "Bernie"
+        e.candidate_json[id].fields.last_name = "Sanders"
+        e.candidate_json[id].fields.color_hex = "#129272"
     }
     function switcheroo5() {
         var id = campaignTrail_temp.candidate_json.map(p=>p.pk).indexOf(205)
