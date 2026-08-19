@@ -4,14 +4,14 @@ campaignTrail_temp.election_json = [
         "pk": 20,
         "fields": {
             "year": 2016,
-            "summary": "<p>The first Mormon president has had a less than graceful entry into the White House. Mitt Romney was barely elected, if even that, due to the Colorado fiasco. The news that broke the American electoral system. In a matter of mere days the election was thrown into chaos had it not been for Romney and Obama coming to an agreement. That which led to Romney winning. Now he holds the reigns of an entire country that thinks he is illegitimate and needs to steer it towards a new path. One he gets to decide.</p> \n<p>Romney is no longer able to critise, he's the man who holds all the power and he needs to find his way. America is counting on him. It'll be a bitter and divisive term but if there's a man for the job. It's Mitt Romney</p> \n",
+            "summary": "<p>2012 was meant to be a red carpet for the first mormon president, Willard Mitt Romney was born into a family which already had its roots settled into Republican politics. Mitt Was meant to be a continuation of that legacy but his vicotry in the 2012 presidential election was anything but graceful. It was almost tragic in how close it was. Mitt now enters into a Whitehouse he didn't earn and a population wanting him and the system that elected him gone.</p> \n<p>Romney is no longer able to criticize, he's the man in charge now. America is barely holding itself toghether and despite it's hatred of it's leader, it's counting on him to keep it all together</p> \n",
             "image_url": "https://i.imgur.com/0KPXG22.jpeg",
             "winning_electoral_vote_number": 270,
             "advisor_url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthfvnext.bing.com%2Fth%2Fid%2FOIP.mYdtlC9Ys5zfDaf_g-jPMQHaEK%3Fcb%3Dthfvnextfalcon4%26pid%3DApi&f=1&ipt=755d67a11b0241b56c101a204f2a69fa6e0b734e9df5bd2f0f5d0c05028e810f&ipo=images",
             "recommended_reading": "<h4 style=\"margin-top: 0.5em;\">Articles</h4>FiveThirtyEight - <a href=\"http://projects.fivethirtyeight.com/2016-swing-the-election/\" target=\"_blank\"> What Would It Take To Turn Blue States Red?</a></br><a href=\"http://thehill.com/blogs/ballot-box/presidential-races/274317-anti-trump-forces-point-to-losing-match-ups-with-clinton\">Anti-Trump forces seize on grim polls for Clinton match-up</a></br><a href=\"http://www.slate.com/blogs/the_slatest/2016/02/24/donald_trump_could_beat_hillary_clinton_in_the_general.html\">Think Hillary Clinton Will Crush Donald Trump in the General Election? Don’t Be So Sure.</a></br><a href=\"http://www.slate.com/blogs/the_slatest/2016/03/01/hillary_clinton_plots_her_general_election_trump_strategy.html\">How Team Clinton Is Planning to Defeat Trump</a></br><a href=\"http://www.vox.com/2016/2/10/10961324/donald-trump-win-november\">Here's Donald Trump's Best Strategy for Winning the White House</a><h4>Books</h4>\nHillary Clinton - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1476751471/amhius20-20\" target=\"_blank\">Hard Choices</a></br>\nHillary Clinton - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0743222253/amhius20-20\" target=\"_blank\">Living History</a></br>\nDonald Trump - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1501137964/amhius20-20\" target=\"_blank\">Crippled America: How to Make America Great Again</a></br>\nDonald Trump - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0399594493/amhius20-20\" target=\"_blank\">The Art of the Deal</a></br>\nGary Johnson - <a href=\"http://www.amazon.com/exec/obidos/ASIN/B008PXW0C0/amhius20-20\" target=\"_blank\">Seven Principles of Good Government</a>",
             "has_visits": 1,
             "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/2012-no-majority.jpg",
-            "creator": "Raven1757",
+            "creator": "Your_Local_Bulgarian",
             "display_year": "The 47th Percent",
             "recommended_reading_enabled": true
         }
@@ -29,7 +29,7 @@ campaignTrail_temp.temp_election_list = [
 
 RecReading = true;
 
-campaignTrail_temp.credits = "Raven1757";
+campaignTrail_temp.credits = "Your_Local_Bulgarian";
 
 campaignTrail_temp.global_parameter_json = [
     {
@@ -49,7 +49,7 @@ campaignTrail_temp.global_parameter_json = [
             "issue_stance_6_max": 0.71,
             "global_variance": 0.01,
             "state_variance": 0.005,
-            "question_count": 30,
+            "question_count": 32,
             "default_map_color_hex": "#C9C9C9",
             "no_state_map_color_hex": "#999999"
         }
@@ -67,7 +67,7 @@ campaignTrail_temp.candidate_json = [
             "party": "Republican",
             "state": "Massachussets",
             "priority": 1,
-            "description": "<p>Willard Mitt Romney has had a surprisingly successful career in politics. He has ran both successfully and unsuccessfully in his home state of Massachusetts. He put up a scarily good fight against Ted Kennedy in what was his first ever race. Romney has held a high standard for himself and as such never gave up on what was considered a long shot candidacy against the now popular Barrack Obama in 2012. Everything came to a head in Colorado and soon gave him just enough Electors to win the presidency.</p> \n<p>Things have changed now. Things are real. Romney is now at the helm and needs to focus to keep himself afloat. He is now the leader of the free world and as such needs to work hard to keep it free. Legitamacy might however be the least of his problems, the economy is still in the gutter and foreign affairs are in a state of flux. The nation has never been as divided as it is now and he is the only man to fix it all.</p> ",
+            "description": "<p><strong>Willard Mitt Romney</p></strong> <p>This man has had a surprisingly successful career in politics. He has ran both successfully and unsuccessfully in his home state of Massachusetts. He put up a scarily good fight against Ted Kennedy in what was his first ever race. Romney has held a high standard for himself and as such never gave up on what was considered a long shot candidacy against the now popular Barrack Obama in 2012. Everything came to a head in Colorado and soon gave him just enough Electors to win the presidency.</p> \n<p>Things have changed now. Things are real. Romney is now at the helm and needs to focus to keep himself afloat. He is now the leader of the free world and as such needs to work hard to keep it free. Legitamacy might however be the least of his problems, the economy is still in the gutter and foreign affairs are in a state of flux. The nation has never been as divided as it is now and he is the only man to fix it all.</p> ",
             "color_hex": "#740f16",
             "secondary_color_hex": "#9c1b1b",
             "is_active": 1,
@@ -90,11 +90,11 @@ campaignTrail_temp.candidate_json = [
             "party": "Republican",
             "state": "Wisconsim",
             "priority": 1,
-            "description": "",
+            "description": "<p><strong>Paul Davis Ryan</p></strong> <p>A Conservative Wisconsinite who has been a member of the House of Representatives since 1999. He was chosen to be Vice President in 2012 to try and appeal to both sides of the party, however it seems like it has done the opposite.</p> <p>Ryan's time in the White House seems like it's coming to end. Despite Ryan's loyalty to Romney, it's clear that he is a bigger problem than problem solver.",
             "color_hex": "#CCCCCC",
             "secondary_color_hex": null,
             "is_active": 0,
-            "image_url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.Uf9yk7jVcqQyV1zCDO_O9wHaJd%3Fpid%3DApi&f=1&ipt=9157ba3dd3cee5ddf5fb1a1c438659f141af3a71125ffef6752eb573e229fa41&ipo=images",
+            "image_url": "https://i.imgur.com/lDeUNoI.jpeg",
             "electoral_victory_message": "",
             "electoral_loss_message": "",
             "no_electoral_majority_message": "Majority?",
@@ -212,7 +212,7 @@ campaignTrail_temp.opponents_weighted_json = [
 jet_data = {
     "headerColor": "#c01c28",
     "headerTextColor": "#ffffff",
-    "windowColor": "#bfe6ff",
+    "windowColor": "#694444",
     "containerColor": "#e01b24",
     "innerWindowColor": "#e8fbff",
     "innerWindowTextColor": "#000000",
@@ -220,7 +220,7 @@ jet_data = {
     "descriptionWindowTextColor": "#000000",
     "startButtonColor": "#e8e8e8",
     "bannerImageUrl": "https://preview.redd.it/how-would-a-romney-incumbency-sim-with-cyoa-go-how-would-v0-8i61delr2xjg1.jpeg?width=640&format=pjpg&auto=webp&s=33124ccfae0be9d78decb27a1029ecf969561e41",
-    "backgroundImageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.MgwYJJFAd-hn4R28J8VfzAHaFj%3Fr%3D0%26pid%3DApi&f=1&ipt=e3149ed33eafa9d55ddc98898eba83bc6821b70625ff190059bc4f872c151e00&ipo=images",
+    "backgroundImageUrl": "https://imgs.search.brave.com/ChxbpjBZ8ZADmNl5AcRIwh4e-T9b6ZaZimSOZPQMN5s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2FlLzRi/L2U2L2FlNGJlNjBi/ODhlNzY5Yzg2ODU4/YzkzZTE4M2M5ODZl/LmpwZw",
     "gameTitle": "The 47th Percent",
     "customQuote": "",
     "quoteTextColor": "#ffffff",
@@ -237,7 +237,8 @@ function applyTheme(theme) {
     const gameWindow = document.getElementById("game_window");
     if (gameWindow && theme.coloring_window) {
         gameWindow.style.backgroundColor = theme.coloring_window;
-    }
+    
+      }
 
     const container = document.querySelector(".container");
     if (container && theme.coloring_container) {
@@ -278,25 +279,10 @@ theme.coloring_title     = "#c01c28";
 theme.coloring_window    = "#bfe6ff";
 theme.coloring_container = "#e01b24";
 theme.header_image = "https://preview.redd.it/how-would-a-romney-incumbency-sim-with-cyoa-go-how-would-v0-8i61delr2xjg1.jpeg?width=640&format=pjpg&auto=webp&s=33124ccfae0be9d78decb27a1029ecf969561e41";
-theme.body_background = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.MgwYJJFAd-hn4R28J8VfzAHaFj%3Fr%3D0%26pid%3DApi&f=1&ipt=e3149ed33eafa9d55ddc98898eba83bc6821b70625ff190059bc4f872c151e00&ipo=images";
+theme.body_background = "https://imgs.search.brave.com/ChxbpjBZ8ZADmNl5AcRIwh4e-T9b6ZaZimSOZPQMN5s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2FlLzRi/L2U2L2FlNGJlNjBi/ODhlNzY5Yzg2ODU4/YzkzZTE4M2M5ODZl/LmpwZw";
 
 applyTheme(theme);
 //#endcode
-let z = new MutationObserver((mutationsList, observer) => {
-    $(document).on('click', '#candidate_id_button', () => {
-        $('#running_mate_id_button').click();
-    });
-
-    $(document).on('click', '#opponent_selection_id_back', () => {
-        $('#running_mate_id_back').click();
-    });
-
-    $(document).on('click', '#opponent_selection_id_button', () => {
-        observer.disconnect();
-    });
-});
-
-z.observe(document, { subtree: true, childList: true });
 // This is a dynamic election night thingy,
 // similar to that of The Political Process
 (function () {
@@ -1034,12 +1020,12 @@ function setupMusicPlayer() {
   if (document.getElementById("player")) return;
 
   const defaultSongs = [
-    ["Lies In The Eyes Of Love", "Part Time", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.bing.com%2Fth%3Fid%3DOIP.zTYJoCKlXdE9Yo4g2UMIWwHaHa%26w%3D120%26h%3D120%26c%3D1%26pid%3D5.1&f=1&nofb=1", "https://audio.jukehost.co.uk/019f3c4d-febe-72fd-8115-df1dae8e3f98"],
-    ["Angel", "Massive Attack", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthfvnext.bing.com%2Fth%2Fid%2FOIP.AU3MIw_ey2oVEfRQcxUxSwHaHa%3Fr%3D0%26cb%3Dthfvnextfalcon4%26pid%3DApi&f=1&ipt=679309a9096247a1fd2170ac78b0da65911c6a5d4635ee2e19c8225e9682db27&ipo=images", "https://audio.jukehost.co.uk/019f3c50-e557-715b-ba29-28cbc7fdfef1"],
-    ["Unkown Feelings", "Novulent", "https://i.ytimg.com/vi/-1n_WkXXl7k/sddefault.jpg?v=69ecf96a", "https://audio.jukehost.co.uk/019f98e0-8046-71f1-9dc9-a53cedc152b5"],
-    ["Bear", "Rock Burwell", "https://imgs.search.brave.com/s6iaGV3p4PjqUnJV0__LC1iivWfOc_2Q5yzp3NzyhiM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnNj/ZG4uY28vaW1hZ2Uv/YWI2NzYxNmQwMDAw/YjI3MzUzMWQ1NjYz/OGY2MmVjNDUxODYy/MTI3ZQ", "https://audio.jukehost.co.uk/019f98ed-c6e0-731d-b7f1-d07c91455f73"],
-    ["So Far Away", "Part Time", "https://i.ytimg.com/vi/ftRIcCbfxEk/sddefault.jpg", "https://audio.jukehost.co.uk/019f98f4-f1d5-7178-8160-c83f20e4cdbd"],
-    ["Every Breath You Take", "The Police", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthf.bing.com%2Fth%2Fid%2FOIP.DdRGVFwx-ddtHkCmsxPSswHaHa%3Fcb%3Dthfc1falcon4%26pid%3DApi&f=1&ipt=653c4dd968ecd5a0b676f97bb602886c731614555f3282f883255b0bfabaf8ac&ipo=images", "https://audio.jukehost.co.uk/019f3d1c-9938-708d-a3f4-0cdc6e1846e4"],
+ ["Lies in the eyes of love", "Part Time",  "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.bing.com%2Fth%3Fid%3DOIP.zTYJoCKlXdE9Yo4g2UMIWwHaHa%26w%3D120%26h%3D120%26c%3D1%26pid%3D5.1&f=1&nofb=1", "https://audio.jukehost.co.uk/019f3c4d-febe-72fd-8115-df1dae8e3f98"],
+    ["Angel", "Massive Attack",  "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthfvnext.bing.com%2Fth%2Fid%2FOIP.AU3MIw_ey2oVEfRQcxUxSwHaHa%3Fr%3D0%26cb%3Dthfvnextfalcon4%26pid%3DApi&f=1&ipt=679309a9096247a1fd2170ac78b0da65911c6a5d4635ee2e19c8225e9682db27&ipo=images", "https://audio.jukehost.co.uk/019f3c50-e557-715b-ba29-28cbc7fdfef1"],
+    ["Unknown Feelings", "Novulent",  "https://i.ytimg.com/vi/-1n_WkXXl7k/sddefault.jpg?v=69ecf96a", "https://audio.jukehost.co.uk/019f98e0-8046-71f1-9dc9-a53cedc152b5"],
+    ["Bear", "Rock Burwell",  "https://imgs.search.brave.com/s6iaGV3p4PjqUnJV0__LC1iivWfOc_2Q5yzp3NzyhiM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnNj/ZG4uY28vaW1hZ2Uv/YWI2NzYxNmQwMDAw/YjI3MzUzMWQ1NjYz/OGY2MmVjNDUxODYy/MTI3ZQ", "https://audio.jukehost.co.uk/019f98ed-c6e0-731d-b7f1-d07c91455f73"],
+    ["So Far Away", "Part Time",  "https://i.ytimg.com/vi/ftRIcCbfxEk/sddefault.jpg", "https://audio.jukehost.co.uk/019f98f4-f1d5-7178-8160-c83f20e4cdbd"],
+    ["Every Breath You Take", "The Police",  "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthf.bing.com%2Fth%2Fid%2FOIP.DdRGVFwx-ddtHkCmsxPSswHaHa%3Fcb%3Dthfc1falcon4%26pid%3DApi&f=1&ipt=653c4dd968ecd5a0b676f97bb602886c731614555f3282f883255b0bfabaf8ac&ipo=images", "https://audio.jukehost.co.uk/019f3d1c-9938-708d-a3f4-0cdc6e1846e4"]
   ];
 
   if (activePlaylist.songs.length === 0) {
@@ -1266,49 +1252,6 @@ function setupMusicPlayer() {
 }
 
 setupMusicPlayer();
-
-campaignTrail_temp.achievements = {
-  "Make a New Deseret": {
-    "image": "https://file.garden/ajctXfqJL0tJxyhI/IYGxUD1.png",
-    "description": "Win it all",
-    "cannotBeCheated": true
-  },
-  "American Nightmare": {
-    "image": "https://file.garden/ajctXfqJL0tJxyhI/rTCNA7E.png",
-    "description": "See the enemy lose again",
-    "cannotBeCheated": true
-  },
-  "Bern out the revolution":{ 
-    "image": "https://file.garden/ajctXfqJL0tJxyhI/Bernie", 
-    "description": "Beat the Revolutionary", 
-    "cannotBeCheated": true 
-  }, 
-  "Eternal Malarkey": { 
-    "image": "https://file.garden/ajctXfqJL0tJxyhI/No%20Malarkey", 
-    "description": "Beat the Vice President", 
-    "cannotBeCheated": true 
-  }, 
-  "I'm Against her":{ 
-    "image": "https://file.garden/ajctXfqJL0tJxyhI/I'm%20Against%20Her", 
-    "description": "Beat the only one of her kind", 
-    "cannotBeCheated": true 
-  }, 
-  "Chop the mountain man":{ 
-    "image": "https://file.garden/ajctXfqJL0tJxyhI/Chop%20the%20mountain%20man", 
-    "description": "Beat the man from the mountains", 
-    "cannotBeCheated": true 
-  }, 
-  "Beat who?":{ 
-    "image": "https://file.garden/ajctXfqJL0tJxyhI/Beat%20who%3F", 
-    "description": "Beat the unkown from Maryland", 
-    "cannotBeCheated": true 
-  },
-  "Spider's Webb":{
-    "image": "https://file.garden/ajctXfqJL0tJxyhI/Spider's%20Webb",
-    "description": "Beat the Webhead from Virginia",
-    "cannotBeCheated": true 
-  }
-}
 
 const style = document.createElement("style");
 style.textContent = `
@@ -1822,12 +1765,12 @@ function addDynamicCSS() {
             position: relative;
             display: inline-block;
             cursor: pointer;
-            background-color: #d8dee8;
+            background-color: #751c1c;
         }
 
         .mytooltip .mytooltiptext {
             width: 240px;
-            background-color: #d8dee8;
+            background-color: #941e1e;
             color: black;
             text-align: center;
             border-radius: 6px;
@@ -1866,25 +1809,6 @@ function addDynamicCSS() {
     
     document.head.appendChild(styleElem);
 }
-
-addDynamicCSS();
-e.displayTooltips = true;
-
-
-tooltipList = [
-
-    {searchString: "Democrats", explanationText: "<img src=https://i.imgur.com/IchSCgH.jpeg> Ennemies of the state"},
-    {searchString: "Colorado", explanationText: "<img src=> The unfaithful chose you"},
-    {searchString: "Obamacare", explanationText: "<img src=> A cheap knockoff"},
-    {searchString: "Romney", explanationText: "<img src=> You look at the mirror and wonder what had happened"},
-    {searchString: "Ryan", explanationText: "<img src=> A needed nuiscence"},
-    {searchString: "Pawlenty", explanationText: "<img src=> A ray of hope for a red midwest"},
-    {searchString: "Christie", explanationText: "<img src=> Pufferfish"},
-    {searchString: "Haley", explanationText: "<img src=> New governor,may be useful"},  
-    {searchString: "Sanders", explanationText: "<img src=> A 'communist'"},
-    {searchString: "Ayers", explanationText: "<img src=https://i.imgur.com/nSX3MDh.jpeg> What the fuck is happening to America..."},
-    {searchString: "Russia", explanationText: "<img src=https://i.imgur.com/zamcmgS.jpeg> America's biggest ennemy"}
-];
 // The data visualizer from 2012LBM
 // many thanks to routevenus for their work here!
 (function () {
@@ -3516,4 +3440,170 @@ tooltipList = [
     }
 })();
 
- 
+ //Credits
+e=campaignTrail_temp
+
+var changeGameDisp = (hide) => {
+  disp = "";
+  if (hide) {
+    disp = "none";
+  }
+  document.getElementsByClassName("inner_window_w_desc")[0].style.display = disp
+};
+campaignTrail_temp.modBoxTheme = { "header_color": "#000000", "header_image_url": "https://file.garden/ajctXfqJL0tJxyhI/Header.jpg", "header_text_color": "#292121", "description_text_color": "#ffffff", "description_background_color": "#685c5c", "main_color": "#a30000", "secondary_color": "#000000", "ui_text_color": "#442323" }
+$("#game_window")[0].style.backgroundImage = "url(https://file.garden/ajctXfqJL0tJxyhI/360_F_193647861_HdI1AN1Jp6hmbjb8%20(1).webp)";
+
+addDynamicCSS();
+e.displayTooltips = true;
+
+
+tooltipList = [
+
+    {searchString: "Democrats", explanationText: "<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/US_Democratic_Party_Logo.svg/1280px-US_Democratic_Party_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail> Ennemies of the state"},
+    {searchString: "Colorado", explanationText: "<img src=https://file.garden/ajctXfqJL0tJxyhI/Colorado> The unfaithful chose you"},
+    {searchString: "Obamacare", explanationText: "<img src=https://imgs.search.brave.com/dA58QJJDji-JXCmA7_v3N2MR8crAMi19zZ6rac0SnqM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/YnJpdGFubmljYS5j/b20vNzUvMTM4Mzc1/LTA1MC04MjFGNkJE/Ni9jZXJlbW9ueS1Q/YXRpZW50LVByb3Rl/Y3Rpb24tYW5kLUFm/Zm9yZGFibGUtQ2Fy/ZS1BY3QtTWFyY2gt/MjMtMjAxMC5qcGc_/dz0zODU> A cheap knockoff"},
+    {searchString: "Romney", explanationText: "<img src=https://imgs.search.brave.com/IekOUM2RM9OyRNc4KHIpbViVopXZVCwrW-4A7Xmz8T8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTQ2/MTk2MzUvcGhvdG8v/dW5pdGVkLXN0YXRl/cy1taXR0LXJvbW5l/eS1sZWZ0LWZvcm1l/ci1nb3Zlcm5vci1v/Zi1tYXNzYWNodXNl/dHRzLWFuZC1hLTIw/MDgtcmVwdWJsaWNh/bi5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9LWE4aktUUkxM/eDY3MUk2OVRjeWRf/SVkwVEtkV2ZSMlph/NUpHMXVrbUExaz0> You look at the picture and wonder what happened"},
+    {searchString: "Ryan", explanationText: "<img src=https://imgs.search.brave.com/-oJKyXZznImKx4XGTa6dRehtfgwk5an2NrjgimdHf2I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9wYXVs/LXJ5YW4tcmFsbHkt/Mjc1MjAwMzAuanBn> A needed nuiscence"},
+    {searchString: "Pawlenty", explanationText: "<img src=https://imgs.search.brave.com/rWS3td13cRFt6FEbp9R_JGAk2LxwrHlJ_otPgwcjBJw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTA4/MDI0ODA5L3Bob3Rv/L3dhc2hpbmd0b24t/Zm9ybWVyLXJlcHVi/bGljYW4tbWlubmVz/b3RhLWdvdi10aW0t/cGF3bGVudHktbGlz/dGVucy10by1oaXMt/aW50cm9kdWN0aW9u/LWR1cmluZy1hbi5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/LXFIQk1GVktOSUxn/dmhXUDhDTnZoaGFL/THVPNHh2VjdaRmRr/Zm00M1NyZz0> A ray of hope for a red midwest"},
+    {searchString: "Christie", explanationText: "<img src=https://imgs.search.brave.com/nQrlbWV0TOnooe1YTaPUydYPEWtcmwIQ8uqreh2NePs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNzQx/MDM5MjgvcGhvdG8v/Y2FtZGVuLW5qdS1z/LWF0dG9ybmV5LWNo/cmlzdG9waGVyLWNo/cmlzdGllLXNwZWFr/cy13aXRoLXRoZS1t/ZWRpYS1vdXRzaWRl/LWNhbWRlbi1mZWRl/cmFsLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1RWFdrYklL/T0ZBSDB6VUp1M1U4/N3dsOEpFOEtiQTlI/RFFzeVhBanFxd0RB/PQ> Pufferfish"},
+    {searchString: "Haley", explanationText: "<img src=https://imgs.search.brave.com/YE3XZD8EEmqpPSFJTZsFLb4P7TDh7MhqM62mIiKYd-Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9uaWtr/aS1oYWxleS1maXJl/cy11cC1jcm93ZC0y/MTA5MzQ4MC5qcGc> New governor,may be useful"},  
+    {searchString: "Sanders", explanationText: "<img src=https://imgs.search.brave.com/Gz2SreNRl4yLQaWoNH2QckWhTZpsoqj-xgX4Ei2MM1g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTk1/NzY1NDMvcGhvdG8v/dW5pdGVkLXN0YXRl/cy1zZW4tYmVybmll/LXNhbmRlcnMtaS12/dC1zcGVha3Mtd2l0/aC1yZXBvcnRlcnMt/aW4tdGhlLXNlbmF0/ZS1wcmVzcy1nYWxs/ZXJ5LWFib3V0Lmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz12/WWc4RkhFY25oTkQz/Vjl1c2JmcHlIR0tu/c0VLSHdYdTlBYUJ3/dElJdmhRPQ> A 'communist'"},
+    {searchString: "Ayers", explanationText: "<img src=https://imgs.search.brave.com/MPOtB4VS0UwxEdCxONWpHZym5FaJ2MYzy-TLoJM_WmE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTE1/Mzk1Nzk2L3Bob3Rv/L29uZS1vZi10aGUt/dGhyZWUtbmF0aW9u/YWwtb2ZmaWNlcnMt/ZWxlY3RlZC1ieS10/aGUtd2VhdGhlcm1h/bi1mYWN0aW9uLW9m/LXRoZS1zZHMtZm9s/bG93aW5nLXRoZS5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/bm1NT3lSM1YwZ0sy/UlcwRDlnVUl1dk1f/ellGbGdaUmZXbktq/SXlhX2xtWT0> An innocent looking creature."},
+    {searchString: "Russia", explanationText: "<img src=https://imgs.search.brave.com/5EiZCAaDswfKHYBuIE-Efn2cYDsFONA3rY2nEGCF1b0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTMw/NjkxODc0L3Bob3Rv/L2Fubml2ZXJzYXJ5/LWNvbW1lbW9yYXRp/b25zLWluLXJlZC1z/cXVhcmUuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTNlcXZX/M2wzZWtxSUE3Z2N6/OXN5R1ZoUkd6Qmsy/bExVTEdQTTBDbG85/bW89> Superpower of a bygone era"},
+    {searchString: "Obama", explanationText: "<img src=https://imgs.search.brave.com/75vJ7fyjQQ029LRvtPfO2h046kM12XD95Eis29BVPFA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTcy/OTM2NjU3MS9waG90/by90b3BzaG90LXVz/LXByZXNpZGVudC1i/YXJhY2stb2JhbWEt/c3BlYWtzLWFib3V0/LWpvYi1jcmVhdGlv/bi1hbmQtdGhlLWVj/b25vbXktYXQtdGhl/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz00MmdGREJvb0Fu/OEtndm9WTlkxOXdF/NE1TZmEwSU5wTkxI/NXBSYmVWUFVZPQ> The rightful winner"},
+    {searchString: "Webb", explanationText: "<img src=https://imgs.search.brave.com/iNsuyY5IXwpIL6lDLv1WY4OPkN_80opal7Cp-qktSpc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9k/L2Q5L0ppbV9XZWJi/X2F0X3JhbGx5Lmpw/Zw> Conservative Virginian"},
+    {searchString: "McRaven", explanationText: "<img src=https://imgs.search.brave.com/d7ZzCFSrwiQYy6t1-oBkJQWZYHJO2omn54Thq7Lc3KY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE4/OTExMDAyL3Bob3Rv/L3dhc2hpbmd0b24t/ZGMtdmljZS1hZG0t/d2lsbGlhbS1tY3Jh/dmVuLXRoZS1taWxp/dGFyeS1jb21tYW5k/ZXItd2hvLWRpcmVj/dGVkLXRoZS1yYWlk/LXRoYXQuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPW0teTRw/NE56bFZteHBBRDlC/VWRpeXhOUEJkSkw4/RzNoWEhJR1VkU3Iw/SkE9> A Strong Man"},
+    {searchString: "O'Malley", explanationText: "<img src=https://imgs.search.brave.com/xj4ZbVBOUpW6BD3LEbhbqeV-VSbFvge_IyiWiokg1mQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy81/LzVhL01hcnRpbl9P/J01hbGxleV8yMDEw/LmpwZw? Who is this guy?"},
+    {searchString: "Clinton", explanationText: "<img src=https://imgs.search.brave.com/dliUhNJfRQ5qbQToMIE8qCXa76qA9kyRSgUTMYsxeTc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9ldy5j/b20vdGhtYi9BMDdI/b0NrSTFXUjUzYzJZ/N01vWmJJeUxXbm89/LzIwMDB4MC9maWx0/ZXJzOm5vX3Vwc2Nh/bGUoKTptYXhfYnl0/ZXMoMTUwMDAwKTpz/dHJpcF9pY2MoKS9n/ZXR0eWltYWdlcy04/MTA1NDc5OC03NzE1/MTM4NGQ1ODc0Zjhi/ODZkZDI5ZGIxMjlh/OGY5Ny5qcGc> The first of her kind"},
+    {searchString: "Biden", explanationText: "<img src=https://imgs.search.brave.com/nRJQWO7zeLZAQ8KIvs5RcceWyyrRWoqxX4kD8d476uE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9i/L2JjL0pvZV9CaWRl/bl8yMDIwLmpwZw> The old man"},
+    {searchString: "Schweitzer", explanationText: "<img src=https://imgs.search.brave.com/43tPwwhv4XqWiDYHjZIEdHyBiVejAOYNQr33tIt2V_4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTQ2/MTkxMjAvcGhvdG8v/dW5pdGVkLXN0YXRl/cy1nb3Zlcm5vci1i/cmlhbi1zY2h3ZWl0/emVyLWEtbW9udGFu/YS1kZW1vY3JhdC1z/cGVha3MtZHVyaW5n/LXRoZS1vcGVuaW5n/LW9mLXRoZS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9NlpL/ZVRBb0s5Qnp5Y2Fh/bVpvUFZZTGNCSV84/d1Fvb2JYNjV5SHJN/a3dSVT0> The Man from the mountains"},
+    {searchString: "Castro", explanationText: "<img src=https://imgs.search.brave.com/CaL0_NZ_n7qQPoYS0cays83yj7AhWYcoV9U179UNTzM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9k/L2RlL0p1bGlhbl9D/YXN0cm9fYnlfR2Fn/ZV9Ta2lkbW9yZV8o/MikuanBn> The only man who can rip Texas away"},
+    {searchString: "Manchin", explanationText: "<img src=https://imgs.search.brave.com/HenNz3g9NMAxo5zAfXKNTzR0HFumcdByinKZtNQ60ZU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTk0/ODM5OTY2OC9waG90/by93YXNoaW5ndG9u/LWRjLXUtcy1zZW5h/dG9yLWpvZS1tYW5j/aGluLXRhbGtzLXRv/LXJlcG9ydGVycy1h/cy1oZS1sZWF2ZXMt/dGhlLXNlbmF0ZS1m/bG9vci5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9QUNoU3pr/MFRzRkV3YXZrMnBW/OWR5SGJnc1hvZEM3/Z2N4SERxX1Q2LUhx/WT0> The last chance for the few dixiecrats"},
+    {searchString: "Huckabee", explanationText: "<img src=https://imgs.search.brave.com/F622JP861qH-AMTqsGEgcLj7-NQarXTAUJ9SeBKHf9o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYwL01pa2VfSHVj/a2FiZWVfYnlfR2Fn/ZV9Ta2lkbW9yZV8y/LmpwZw> A right wing challanger"},
+    {searchString: "Snowden", explanationText: "<img src=https://imgs.search.brave.com/mIbKzwzmscosuXfYIpUMS_2lVqRvdyIrQcayBqVR82g/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODc2/OTg1NDI2L3Bob3Rv/L2lzdGFuYnVsLXR1/cmtleS1mb3JtZXIt/dS1zLW5hdGlvbmFs/LXNlY3VyaXR5LWFn/ZW5jeS1jb250cmFj/dG9yLWVkd2FyZC1z/bm93ZGVuLWRlbGl2/ZXJzLWEuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTFmeDFj/YVIwaFJ0a3Bvck02/X0JTSFc3bC1ENkZI/X0FwbVJGLUtVV1lQ/Qk09> A liar"},
+    {searchString: "Ukraine", explanationText: "<img src=https://imgs.search.brave.com/PT8G5u_xs5XHaMI3lfajUvG-LbCwlcjToUnie1_92w4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzU4Lzg0LzYz/LzM2MF9GXzU4ODQ2/MzU1XzBjNGNXVlpy/RVZ6TDhxb2hkbnV5/YWNlcDlhOUw1d2F3/LmpwZw> Was only relevant in 1994"},
+    {searchString: "Libertarians", explanationText: "<img src=https://imgs.search.brave.com/TSCI76jENKBrC3oe7SpHfdcbQAop_uiyp2FGsxxFVxw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9k/L2QzL1NlcHRfMTIs/XzIwMDlfLV9UZWFf/UGFydHlfVGF4X1Bh/eWVyX1Byb3Rlc3Qs/X1dhc2hpbmd0b25f/REMuanBn> Most important useless party"},
+    {searchString: "Republicans", explanationText: "<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/GOP_logo_%282004%E2%80%932015%29.svg/1920px-GOP_logo_%282004%E2%80%932015%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail> Your best friends or worst ennemies"},
+    {searchString: "Islamic State", explanationText: "<img src=https://imgs.search.brave.com/2g5rZg5sqA1zZGQdkDmPUlgohHcETKcHt6-w2IflBHk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODY5/ODEzOTIyL3Bob3Rv/L2lyYXFpLWZpZ2h0/ZXJzLW9mLXRoZS1o/YXNoZWQtYWwtc2hh/YWJpLXN0YW5kLW5l/eHQtdG8tYS13YWxs/LWJlYXJpbmctdGhl/LWlzbGFtaWMtc3Rh/dGUtZ3JvdXAuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVBp/S1lwSVgwTmZZQzlK/eTBOejNCLWgwWkdr/YnVKRXc5dGVfQjM5/cmxMQzg9> The antithesis of your beliefs"},
+    {searchString: "NATO", explanationText: "<img src=https://imgs.search.brave.com/OCMQfBKc_RIL_Ndfg4H0mWnadYfslyJdIewxBleNi60/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjE0/Nzc1Mzc5MC9pdC9m/b3RvL2FtZXJpY2Fu/LWFuZC1uYXRvLWZs/YWdzLWFyZS1zZWVu/LWluLXdhcnNhdy1w/b2xhbmQtb24tYXBy/aWwtMTItMjAyNC5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/aFdla1hxUTloY2Nz/UzlraV9nNTNRLUJh/NEx2RGI4ak9QX0Uz/QVd3Z05hYz0> Imperfect Alliance"},
+    {searchString: "Patriot Act", explanationText: "<img src=https://file.garden/ajctXfqJL0tJxyhI/Screenshot%202026-08-13%20124233.png> A National Embarassment"},
+    {searchString: "Electoral College", explanationText: "<img src=https://imgs.search.brave.com/ij_q096cshwGpU_eZXr3oKXeCUTAFkOwirciGxL70CI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI4/MzgxMjAyNi9waG90/by9hLXdvbWFuLXBy/ZXBhcmVzLXRvLWNv/bG9yLWFub3RoZXIt/c3RhdGUtb24tdGhl/LWVsZWN0b3JhbC1j/b2xsZWdlLW1hcC1p/bi1yZWQtZm9yLWEt/cmVwdWJsaWNhbi5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/QWRLOExxeng5MzNz/U2ZCX1RHVU9ldFdn/cDlIOVFucXlCQlpw/cFV2b1dwTT0> The foundation of American Democracy"}
+];
+
+campaignTrail_temp.achievements = {
+  "Bern out the revolution":{ 
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/Bernie", 
+    "description": "Beat the Revolutionary", 
+    "cannotBeCheated": true 
+  }, 
+  "Eternal Malarkey": { 
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/No%20Malarkey", 
+    "description": "Beat the Vice President", 
+    "cannotBeCheated": true 
+  }, 
+  "I'm Against her":{ 
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/I'm%20Against%20Her", 
+    "description": "Beat the only one of her kind", 
+    "cannotBeCheated": true 
+  }, 
+  "Chop the mountain man":{ 
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/Chop%20the%20mountain%20man", 
+    "description": "Beat the man from the mountains", 
+    "cannotBeCheated": true 
+  }, 
+  "Beat who?":{ 
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/Beat%20who%3F", 
+    "description": "Beat the unkown from Maryland", 
+    "cannotBeCheated": true 
+  },
+  "Spider's Webb":{
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/Spider's%20Webb",
+    "description": "Beat the Webhead from Virginia",
+    "cannotBeCheated": true 
+  },
+  "Scared Admiral":{
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/Nearly%20beat%20the%20best%20of%20the%20best",
+    "description": "Nearly beat the best of the best",
+    "cannotBeCheated": true 
+  },
+  "No More Dixie":{
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/No%20More%20Dixie",
+    "description": "Beat the Conservative",
+    "cannotBeCheated": true 
+  },
+  "The Ghost of Teddy":{
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/image.png",
+    "description": "Create a New Party System",
+    "cannotBeCheated": true 
+  },
+  "Second coming of Wallace...or Buchanan":{
+  "image": "",
+  "description": "See yourself Replaced by a right wing challenger",
+  "cannotBeCheated": true
+  },
+  "A New State of Liberalism":{
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/A%20new%20state%20of%20Liberalism",
+    "description": "Get a state to vote for the golden party",
+    "cannotBeCheated": true
+  },
+  "The Webhead's voice":{
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/Webhead",
+    "description": "Lose despite a clear advantage",
+    "cannotBeCheated": true
+  },
+  "Get The Fucker Back Home":{
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/jEF9a798rVMk89K6s4vXwH.png",
+    "description": "Bring Snowden back",
+    "cannotBeCheated": true
+  },
+   "Prove American Superiority": {
+    "image": "",
+    "description": "Leave Russia embarassed",
+    "cannotBeCheated": true
+  },
+   "Be Proven Right": {
+    "image": "",
+    "description": "Have Russia prove your point",
+    "cannotBeCheated": true
+   },
+   "Bremain":{
+    "image": "",
+    "description": "Have Britain choose the correct option",
+    "cannotBeCheated": true
+   },
+   "You're Fired!": {
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/You're%20fired.jpg",
+    "description": "Fire your old friend",
+    "cannotBeCheated": true
+  },
+   "Ronald Romney": {
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/Ronald%20Romney",
+    "description": "Win more than 500 electoral votes against anyone but the enemy",
+    "cannotBeCheated": true
+  },
+   "Mitt McGovern": {
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/boston-governor-mitt-romney-has-a-year-end-interview-in-his-office-with-globe-reporters.webp",
+    "description": "Lose with less than 100 electoral votes against anyone but the admiral",
+    "cannotBeCheated": true
+  },
+    "End of the Line": {
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/12ByTheBook-square320.png",
+    "description": "Lose it all against a respected man",
+    "cannotBeCheated": false
+  },
+  "American Nightmare": {
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/rTCNA7E.png",
+    "description": "See the enemy lose again",
+    "cannotBeCheated": true
+  },
+   "Second Reconstruction": {
+    "image": "",
+    "description": "Have the enemy win a state",
+    "cannotBeCheated": true
+  },
+   "Make a New Deseret": {
+    "image": "https://file.garden/ajctXfqJL0tJxyhI/IYGxUD1.png",
+    "description": "Win it all",
+    "cannotBeCheated": true
+  },
+}
