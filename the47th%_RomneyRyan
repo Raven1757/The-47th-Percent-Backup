@@ -3,7 +3,7 @@ campaignTrail_temp.questions_json = [
         "model": "campaign_trail.question",
         "pk": 1042,
         "fields": {
-            "description": "You sat at your campaign headquarters waiting, hoping that the polls would close faster. Results were just as expected"
+            "description": "You sat at your campaign headquarters waiting, hoping that the polls would close faster. Results were just as expected, Ohio, North Carolina and Florida went to your side. Eventually it became clear the votes just wouldn't come to your side. You began drafting your concession speech soon after but the numbers were still being counted. Colorado was too close to call but the state was never considered competitive either, Your eyes became glued to the screen as the votes were practically tied. NBC was trying to find some reason for how the polls were this wrong. The final tally has Obama up by less than a quarter of a percent. It's another 2000 however this time another headline dominates the news \"Colorado electors plan to vote Romney despite election result\". What do you tell the people?"
         }
     },
     {
@@ -190,7 +190,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5139,
         "fields": {
             "question": 1042,
-            "description": "I have been made President despite never being voted in. I have no reason to be here expect corruption and scandal. That ends tonight. That was Walker's administration. Mine will be one of truth and pragmatism, not corruption and lies."
+            "description": "My fellow Americans, tonight we have seen the repeat of one of the most divided we have ever been, this time we have the option not to let this divided us the same way. All that takes is us working together. I'll call president Obama and try my best to figure out how we move forward after this."
         }
     },
     {
@@ -807,6 +807,14 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 1077,
             "description": "I made my selection based on who is most qualified to serve as President, should the situation ever arise. Tim Kaine has served as a Governor and a Senator over the couse of many years, and he is a reliably progressive Democrat."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21083,
+        "fields": {
+            "question": 1042,
+            "description": "Our nation is being tested today. We are standing in a moment of incredible change, we have to either accept it or face the consequences of rejecting this change. This election has already been transformative and we need to work towards getting those changes done."
         }
     }
 ];
@@ -3943,7 +3951,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1015,
-            "state_multiplier": 0.55
+            "state_multiplier": 0.63
         }
     },
     {
@@ -4015,7 +4023,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1023,
-            "state_multiplier": 0.72
+            "state_multiplier": 0.78
         }
     },
     {
@@ -4294,7 +4302,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 205,
             "state": 1003,
-            "state_multiplier": 1
+            "state_multiplier": 1.05
         }
     },
     {
@@ -4348,7 +4356,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 205,
             "state": 1009,
-            "state_multiplier": 1
+            "state_multiplier": 0.98
         }
     },
     {
@@ -4420,7 +4428,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 205,
             "state": 1017,
-            "state_multiplier": 1.01
+            "state_multiplier": 1.12
         }
     },
     {
@@ -5640,7 +5648,28 @@ campaignTrail_temp.candidate_state_multiplier_json = [
     }
 ];
 
-campaignTrail_temp.answer_score_global_json = [];
+campaignTrail_temp.answer_score_global_json = [
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21085,
+        "fields": {
+            "answer": 5139,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21086,
+        "fields": {
+            "answer": 21083,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.01
+        }
+    }
+];
 
 campaignTrail_temp.answer_score_issue_json = [
     {
@@ -5717,7 +5746,26 @@ campaignTrail_temp.answer_score_issue_json = [
 
 campaignTrail_temp.answer_score_state_json = [];
 
-campaignTrail_temp.answer_feedback_json = [];
+campaignTrail_temp.answer_feedback_json = [
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21082,
+        "fields": {
+            "answer": 5139,
+            "candidate": 200,
+            "answer_feedback": "You call Obama and he concedes the race gracefully . He is clearly angry at the situation but tells you he'll make sure to give a speech to calm his supporters. You know it won't be enough but it will be a start."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21084,
+        "fields": {
+            "answer": 21083,
+            "candidate": 200,
+            "answer_feedback": "Obama calls to concede you and talks to you about united the nation after an election this close. Your speech didn't help the situation despite the calls for unity, the people are outraged and even think you are endorsing the behavior of the electors."
+        }
+    }
+];
 
 campaignTrail_temp.candidate_image_url = "https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/washington-dc-sen-mitt-romney-stands-in-a-hallway-in-the-u-s-capitol-on-january-24-2020-in.webp";
 campaignTrail_temp.running_mate_image_url = "https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/washington-dc-speaker-of-the-house-paul-ryan-delivers-a-farewell-address-in-the-great-hall-of.webp";
@@ -5761,20 +5809,26 @@ const endingDefs = [
         "variable": 0,
         "operator": ">",
         "amount": 499,
-        "endingTitle": "America's new Joseph Smith",
+        "endingTitle": "Votes for Nothing",
         "endingSubtitle": "",
-        "endingText": "<p>500</p>\n\n<p>You had won it all. All you physically could. America is yours. Your nation, your beliefs.</p>\n\n<p>It was yours. You looked out onto a wave of flags and fireworks, Ann at your side. You didn't need to say anything. It was all said for you. Your victory was one for the ages. Ronald Reagan smiled down at you from his heaven. You stood on a podium made of steel. One which you crafted from your own hard work. It was never going to be shattered. Your legacy neither</p>",
-        "endingImage": "https://imgs.search.brave.com/f68Mtuoq3xWicwQ1s1WAiIRCh9vZBFs2yEzBPxFp4yg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTkz/MzUyMzE0L3Bob3Rv/L3JlcHVibGljYW4t/cHJlc2lkZW50aWFs/LWNhbmRpZGF0ZS1h/bmQtZm9ybWVyLW1h/LWdvdmVybm9yLW1p/dHQtcm9tbmV5LXNw/ZWFraW5nLWF0LXRo/ZS1hZ3dheS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9UmlO/elBIcFJvU1Z3Smc3/Z3NkYjdMbWhDVXEx/RENjU2ZYbXA4eUNE/ZmVPdz0",
+        "endingText": "",
+        "endingImage": "https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/Romney_2011_Paradise_Valley%2C_AZ_rally.jpg",
         "endingHideImage": false,
-        "endingSlidesJson": "[\n  {\n    \"variable\": 0,\n    \"operator\": \">\",\n    \"amount\": 499,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"America's new Joseph Smith\",\n    \"subtitle\": \"\",\n    \"content\": \"<p>500</p>\\n\\n<p>You had won it all. All you physically could. America is yours. Your nation, your beliefs.</p>\\n\\n<p>It was yours. You looked out onto a wave of flags and fireworks, Ann at your side. You didn't need to say anything. It was all said for you. Your victory was one for the ages. Ronald Reagan smiled down at you from his heaven. You stood on a podium made of steel. One which you crafted from your own hard work. It was never going to be shattered. Your legacy neither</p>\",\n    \"image\": \"https://imgs.search.brave.com/f68Mtuoq3xWicwQ1s1WAiIRCh9vZBFs2yEzBPxFp4yg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTkz/MzUyMzE0L3Bob3Rv/L3JlcHVibGljYW4t/cHJlc2lkZW50aWFs/LWNhbmRpZGF0ZS1h/bmQtZm9ybWVyLW1h/LWdvdmVybm9yLW1p/dHQtcm9tbmV5LXNw/ZWFraW5nLWF0LXRo/ZS1hZ3dheS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9UmlO/elBIcFJvU1Z3Smc3/Z3NkYjdMbWhDVXEx/RENjU2ZYbXA4eUNE/ZmVPdz0\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\",\n    \"audio\": {\n      \"title\": \"Amazing Grace\",\n      \"artist\": \"The Christian Faith\",\n      \"cover\": \"https://imgs.search.brave.com/ltU8fKLiP2A8HbpYWdMQOHDjB2q7Db8j2n4LbVOT5Ys/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/aG9seWFydC5jb20v/YmxvZy93cC1jb250/ZW50L3VwbG9hZHMv/c2l0ZXMvMTAvMjAx/OS8wMy9TdGF0aXN0/aWNzLUFib3V0LUNo/cmlzdGlhbml0eS0z/MDB4MjAwLmpwZw\",\n      \"url\": \"https://audio.jukehost.co.uk/01a1695f-d6a1-7033-99d4-cc52f7180730\"\n    }\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 0,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"A New Horizon\",\n    \"subtitle\": \"The Admiral's America\",\n    \"content\": \"Nothing but a sea of blue\",\n    \"image\": \"https://imgs.search.brave.com/SWXgUfcnsrepufGsrinVlbwKxzDq-JN6fbKSq0XnDZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmlu/c2lkZXIuY29tLzVj/NjFkN2FhYmRlNzBm/NmMyNTU0OTA0Nj93/aWR0aD02MDAmZm9y/bWF0PWpwZWcmYXV0/bz13ZWJw\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\",\n    \"audio\": {\n      \"title\": \"Horizon\",\n      \"artist\": \"Paweł Błaszczak\",\n      \"cover\": \"https://ia601802.us.archive.org/10/items/dying_light_ost/Cover.jpg?cnt=0\",\n      \"url\": \"https://audio.jukehost.co.uk/01a1695f-d602-719c-9270-1823d4eba90b\"\n    }\n  }\n]",
-        "audioTitle": "Amazing Grace",
-        "audioArtist": "The Christian Faith",
-        "audioCover": "https://imgs.search.brave.com/ltU8fKLiP2A8HbpYWdMQOHDjB2q7Db8j2n4LbVOT5Ys/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/aG9seWFydC5jb20v/YmxvZy93cC1jb250/ZW50L3VwbG9hZHMv/c2l0ZXMvMTAvMjAx/OS8wMy9TdGF0aXN0/aWNzLUFib3V0LUNo/cmlzdGlhbml0eS0z/MDB4MjAwLmpwZw",
-        "audioUrl": "https://audio.jukehost.co.uk/01a1695f-d6a1-7033-99d4-cc52f7180730",
+        "endingSlidesJson": "[\n  {\n    \"variable\": 0,\n    \"operator\": \">\",\n    \"amount\": 499,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"Votes for Nothing\",\n    \"subtitle\": \"\",\n    \"content\": \"\",\n    \"image\": \"https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/Romney_2011_Paradise_Valley%2C_AZ_rally.jpg\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [\n      {\n        \"variable\": \"wins\",\n        \"comparator\": \"<=\",\n        \"value\": 0\n      }\n    ],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\",\n    \"audio\": {\n      \"title\": \"Money For Nothing\",\n      \"artist\": \"Dire Straits\",\n      \"cover\": \"https://imgs.search.brave.com/wHbPgQ_R1RXe_E1JpV68gacpqV2P0rP2Pk4OJ1iKkNc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9mYXN0/bHktczMuYWxsbXVz/aWMuY29tL3JlbGVh/c2UvbXIwMDAxNjM3/MTEzL2Zyb250LzQw/MC94MVlSY0pZZUlD/QmZELU9tYkc1VEZC/eWhNLU9GSTh6RzRs/LXFWcFhYQjFJPS5q/cGc\",\n      \"url\": \"https://audio.jukehost.co.uk/01a204e3-920f-7153-9d9f-653c1e665bd3\"\n    }\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \">\",\n    \"amount\": 499,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"America's new Joseph Smith\",\n    \"subtitle\": \"\",\n    \"content\": \"<p>500</p>\\n\\n<p>You had won it all. All you physically could. America is yours. Your nation, your beliefs.</p>\\n\\n<p>It was yours. You looked out onto a wave of flags and fireworks, Ann at your side. You didn't need to say anything. It was all said for you. Your victory was one for the ages. Ronald Reagan smiled down at you from his heaven. You stood on a podium made of steel. One which you crafted from your own hard work. It was never going to be shattered. Your legacy neither</p>\",\n    \"image\": \"https://imgs.search.brave.com/f68Mtuoq3xWicwQ1s1WAiIRCh9vZBFs2yEzBPxFp4yg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTkz/MzUyMzE0L3Bob3Rv/L3JlcHVibGljYW4t/cHJlc2lkZW50aWFs/LWNhbmRpZGF0ZS1h/bmQtZm9ybWVyLW1h/LWdvdmVybm9yLW1p/dHQtcm9tbmV5LXNw/ZWFraW5nLWF0LXRo/ZS1hZ3dheS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9UmlO/elBIcFJvU1Z3Smc3/Z3NkYjdMbWhDVXEx/RENjU2ZYbXA4eUNE/ZmVPdz0\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\",\n    \"audio\": {\n      \"title\": \"Amazing Grace\",\n      \"artist\": \"The Christian Faith\",\n      \"cover\": \"https://imgs.search.brave.com/ltU8fKLiP2A8HbpYWdMQOHDjB2q7Db8j2n4LbVOT5Ys/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/aG9seWFydC5jb20v/YmxvZy93cC1jb250/ZW50L3VwbG9hZHMv/c2l0ZXMvMTAvMjAx/OS8wMy9TdGF0aXN0/aWNzLUFib3V0LUNo/cmlzdGlhbml0eS0z/MDB4MjAwLmpwZw\",\n      \"url\": \"https://audio.jukehost.co.uk/01a1695f-d6a1-7033-99d4-cc52f7180730\"\n    }\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 0,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"A New Horizon\",\n    \"subtitle\": \"The Admiral's America\",\n    \"content\": \"Nothing but a sea of blue\",\n    \"image\": \"https://imgs.search.brave.com/SWXgUfcnsrepufGsrinVlbwKxzDq-JN6fbKSq0XnDZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmlu/c2lkZXIuY29tLzVj/NjFkN2FhYmRlNzBm/NmMyNTU0OTA0Nj93/aWR0aD02MDAmZm9y/bWF0PWpwZWcmYXV0/bz13ZWJw\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\",\n    \"audio\": {\n      \"title\": \"Horizon\",\n      \"artist\": \"Paweł Błaszczak\",\n      \"cover\": \"https://ia601802.us.archive.org/10/items/dying_light_ost/Cover.jpg?cnt=0\",\n      \"url\": \"https://audio.jukehost.co.uk/01a1695f-d602-719c-9270-1823d4eba90b\"\n    }\n  }\n]",
+        "audioTitle": "Money For Nothing",
+        "audioArtist": "Dire Straits",
+        "audioCover": "https://imgs.search.brave.com/wHbPgQ_R1RXe_E1JpV68gacpqV2P0rP2Pk4OJ1iKkNc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9mYXN0/bHktczMuYWxsbXVz/aWMuY29tL3JlbGVh/c2UvbXIwMDAxNjM3/MTEzL2Zyb250LzQw/MC94MVlSY0pZZUlD/QmZELU9tYkc1VEZC/eWhNLU9GSTh6RzRs/LXFWcFhYQjFJPS5q/cGc",
+        "audioUrl": "https://audio.jukehost.co.uk/01a204e3-920f-7153-9d9f-653c1e665bd3",
         "endingAccentColor": "#11299e",
         "endingBackgroundColor": "#ffffff",
         "endingTextColor": "#000000",
-        "variableConditions": [],
+        "variableConditions": [
+            {
+                "variable": "wins",
+                "comparator": "<=",
+                "value": 0
+            }
+        ],
         "variableConditionOperator": "AND",
         "outcomeCondition": "ignore",
         "answerConditionType": "ignore",
@@ -6238,7 +6292,15 @@ endingPicker = (out, totv, aa, quickstats) => {
 // [JETS_ENDINGS_END]
 
 //#startcode
+campaignTrail_temp.multiple_endings = true;
+
 // CYOA Variables
+var ideology = -3;
+var approval = 51;
+var wins = 2;
+var authority = 0;
+var congress = 3;
+var division = 5;
 var Primaries = 0;
 
 campaignTrail_temp.cyoa = true;
@@ -6375,7 +6437,6 @@ function setCandidateIdentity(candidatePk, options) {
         }
     }
 }
-
 // index to assign into question_number before nextQuestion()
 function getJumpIndexFromPk(pk) {
   const idx = getQuestionIndexFromPk(pk);
@@ -6389,15 +6450,45 @@ function getQuestionNumberFromPk(pk) {
 cyoAdventure = function (a) {
     const ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1];
     e.noCounter = campaignTrail_temp.player_answers.length;
+
+    // [JETS_CYOA_VARIABLE_EFFECTS_START]
+    // -5 division
     if (ans == 5139) {
-      switcheroo8()
+        division -= 5;
     }
+
+    // -1 authority
+    if (ans == 5139) {
+        authority -= 1;
+    }
+
+    // -15 approval
+    if (ans == 5139) {
+        approval -= 15;
+    }
+
+    // -2 wins
+    if ([5139, 21083].includes(ans)) {
+        wins -= 2;
+    }
+
+    // -20 approval
+    if (ans == 21083) {
+        approval -= 20;
+    }
+
+    // +7 division
+    if (ans == 21083) {
+        division += 7;
+    }
+    // [JETS_CYOA_VARIABLE_EFFECTS_END]
+
     }
     function switcheroo1() {
         var id = e.candidate_json.map(p=>p.pk).indexOf(205)
         e.candidate_json[id].fields.first_name = "Hillary"
         e.candidate_json[id].fields.last_name = "Clinton"
-        e.candidate_json[id].fields.color_hex = "#0b5f91"
+        e.candidate_json[id].fields.color_hex = "#175477"
     }
     function switcheroo2() {
         var id = e.candidate_json.map(p=>p.pk).indexOf(205)
@@ -6443,7 +6534,7 @@ cyoAdventure = function (a) {
         var id = e.candidate_json.map(p=>p.pk).indexOf(205)
         e.candidate_json[id].fields.first_name = "William"
         e.candidate_json[id].fields.last_name = "H. McRaven"
-        e.candidate_json[id].fields.color_hex = "#34043f"
+        e.candidate_json[id].fields.color_hex = "#16043f"
         var id = e.candidate_json.map(p=>p.pk).indexOf(206)
         e.candidate_json[id].fields.first_name = "Mike"
         e.candidate_json[id].fields.last_name = "Huckabee"
@@ -6474,7 +6565,7 @@ cyoAdventure = function (a) {
         var id = e.candidate_json.map(p=>p.pk).indexOf(205)
         e.candidate_json[id].fields.first_name = "Brian"
         e.candidate_json[id].fields.last_name = "Schweitzer"
-        e.candidate_json[id].fields.color_hex = "#0d349e"
+        e.candidate_json[id].fields.color_hex = "#0d709e"
 
     }
     function switcheroo10() {
@@ -6483,6 +6574,315 @@ cyoAdventure = function (a) {
         e.candidate_json[id].fields.last_name = "O'Malley"
         e.candidate_json[id].fields.color_hex = "#6c6179"
 
+}
+
+const stats = [
+    {
+        getValue: () => approval,
+        before: "You are ",
+        after: ".",
+        tiers: [
+            [25, "Despised", "#500303"],
+            [30, "hated", "#961a1a"],
+            [35, "extremly unpopular", "#b63232"],
+            [40, "very unpopular", "#bf6060"],
+            [45, "unpopular", "#c09191"],
+            [50, "undivisive", "#9ba099"],
+            [55, "liked", "#9ac091"],
+            [60, "popular", "#7ab473"],
+            [65, "extremely popular", "#45af37"],
+            [70, "extremely popular", "#31b60f"],
+            [Infinity, "the second coming of Washington", "#191b7e"]
+        ]
+    },
+    {
+        getValue: () => wins,
+        before: "you are ",
+        after: ".",
+        tiers: [
+            [-8, "horrifically unsuccessful", "#db0e0e"],
+            [-6, "very unsuccessful", "#bb3232"],
+            [-3, "unsuccessful", "#bf6060"],
+            [0, "not doing much", "#d4b54e"],
+            [3, "successful", "#93bf60"],
+            [6, "very successful", "#478f39"],
+            [Infinity, "extremely successful", "#245c1f"]
+        ]
+    },
+    {
+        getValue: () => authority,
+        before: "Foreign powers are ",
+        after: " America.",
+        tiers: [
+            [-6, "feigning at", "#7a0505"],
+            [-4, "angered at", "#c02828"],
+            [-2, "disrespecting", "#bfb858"],
+            [1, "fine with", "#88bf58"],
+            [4, "loyal to", "#61bf58"],
+            [Infinity, "obeing", "#1d9711"]
+        ]
+    },
+    {
+        getValue: () => ideology,
+        before: "Your ideology is ",
+        after: ".",
+        tiers: [
+            [-6, "Ronald Reagan reincarnated", "#9b0d0d"],
+            [-4, "traditional", "#ad2a2a"],
+            [-2, "classical republican", "#bf5858"],
+            [0, "moderate", "#bfbd58"],
+            [2, "more liberal than normal", "#58bf69"],
+            [4, "surprisingly liberal", "#3ab836"],
+            [Infinity, "1920's Republican", "#27d310"]
+        ]
+    },
+    {
+        getValue: () => division,
+        before: "America is ",
+        after: " .",
+        tiers: [
+            [-15, "dangerously divided", "#9c1616"],
+            [-10, "very divided", "#b61c1c"],
+            [-5, "divided", "#bf5858"],
+            [0, "as normal", "#a08d20"],
+            [5, "united", "#58bf58"],
+            [10, "very united", "#4ab934"],
+            [Infinity, "unified", "#22b41c"]
+        ]
+    }
+];
+
+const democrats = {
+    "Bernie Sanders": {
+        picture: "https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/Bernie%20Sanders",
+        advice: "A Socialist fighter who has gained momentum ever since the 2012 election. Keeping things they way they are seems to be his path to victory."
+    },
+    "Joe Biden": {
+        picture: "https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/Joe%20Biden",
+        advice: "The Vice President of the rightful winner and out for your blood. An average administration that's approved by the public might get him farther along."
+    },
+    "Hillary Clinton": {
+        picture: "https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/Hillary%20Clinton",
+        advice: "Former first lady, senator from New York and the first potential female president.A more liberal administration without support is her hand in the Democratic game of poker."
+    },
+    "Brian Schweitzer": {
+        picture: "https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/brian%20schweitzer",
+        advice: "Former Governor of Montana and progressive firebrand. Hailing from a red state means he can narrow margins in the traditionally red plains. He could go from extremely strong to weak in a heartbeat."
+    },
+    "Martin O'Malley": {
+        picture: "https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/Martin%20O'Malley",
+        advice: "Who is he? Oh right, former governor of Maryland, probably wouldn't win a single state in the primaries let alone the general."
+    },
+    "Jim Webb": {
+        picture: "https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/jim%20webb",
+        advice: "Jim Webb, a conservative Democrat from Virginia, Webb's path  to victory is arguably slimer than that of O'Malley and even if he does win the progressive wing would riot."
+    },
+    "William McRaven": {
+        picture: "https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/William%20McRaven",
+        advice: "A respected 4-star admiral and arguably your biggest nightmare if you want to win reelection."
+    },
+    "Julian Castro": {
+        picture: "https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/Julian%20Castro",
+        advice: "One of the most well known Texas Democrats, Castro could make the state competitive unless we stick to our Conservative guns."
+    },
+    "Lincoln Chafee": {
+        picture: "https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/Lincoln%20Chafee",
+        advice: "The Independent Governor of Rhode Island."
+    },
+    "Sherrod Brown": {
+        picture: "https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/Sherrod%20Brown",
+        advice: "Only of the last remaining Ohio democrats."
+    },
+    "Joe Manchin": {
+        picture: "https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/Joe%20Manchin",
+        advice: "Joe Manchin, one of, if not, the most popular Blue Dog Democrats. Manching can only hope to be competitive if Democrats have a major shift in ideology."
+    },
+    "William Ayers": {
+        picture: "https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/William%20Ayers",
+        advice: "What The Fuck."
+    },
+};
+
+function leadingDemocrat() {
+    try {
+        if (ideology < 0 && ideology > -6 && approval > 50 && wins <= 2 && wins >= 0)
+            return "Bernie Sanders";
+
+        if (ideology < 6 && ideology > 0 && approval < 50 && wins >= 2 && wins <= 4)
+            return "Joe Biden";
+
+        if (ideology < 0 && ideology > -6 && approval < 50 && wins >= 2 && wins <= 4)
+            return "Hillary Clinton";
+
+        if (ideology < 6 && ideology > 0 && approval > 50 && wins <= 2 && wins >= 0)
+            return "Brian Schweitzer";
+        if (ideology < 6 && ideology > 0 && approval < 50 && wins >= 0 && wins <= 2)
+            return "Julian Castro";
+        if (ideology < 6 && ideology > 0 && approval > 50 && wins >= 2 && wins <= 4)
+            return "Jim Webb";
+        if (ideology < 0 && ideology > -6 && approval > 50 && wins >= 2 && wins <= 4)
+            return "Martin O'Malley";
+        if (ideology < 0 && ideology > -6 && approval < 50 && wins >=0 && wins <= 2)
+            return "William McRaven";
+    } catch (e) {}
+
+    return "No clear frontrunner";
+}
+
+function statLine(stat) {
+    const value = stat.getValue();
+    const [, label, color] = stat.tiers.find(([max]) => value <= max);
+
+    return `
+        <div class="tracker-stat">
+            ${stat.before}<span style="color:${color};font-weight:bold;">${label}</span>${stat.after}
+        </div>
+    `;
+}
+
+function frontrunnerHTML() {
+    const name = leadingDemocrat();
+    const { picture, advice } = democrats[name];
+
+    return `
+        <div class="tracker-frontrunner">
+            <h3>The Democratic field</h3>
+            <div class="tracker-candidate">
+                <img src="${picture}" alt="">
+                <div>
+                    <h4>${name}</h4>
+                    <p>${advice}</p>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function buildTracker() {
+    let box = document.getElementById("trackerBox");
+
+    if (!box) {
+        box = document.createElement("div");
+        box.id = "trackerBox";
+        document.body.appendChild(box);
+    }
+
+    box.innerHTML = `
+        <img class="tracker-banner" src="https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/uppertracker" alt="">
+        <div class="tracker-stats">
+            ${stats.map(statLine).join("")}
+        </div>
+        ${frontrunnerHTML()}
+        <img class="tracker-banner" src="https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/romney_election_night_wide-2898933fee50387424a9eb7b7e63396d0c711149%20(1).jpg" alt="">
+    `;
+}
+
+function addTrackerButton() {
+    if (document.getElementById("btn_tracker")) return;
+
+    const anchor = document.getElementById("view_electoral_map");
+    if (!anchor) return;
+
+    const button = document.createElement("button");
+    button.id = "btn_tracker";
+    button.textContent = "Your Kingdom";
+    button.style.marginLeft = "1.5em";
+
+    button.addEventListener("click", event => {
+        event.preventDefault();
+
+        const box = document.getElementById("trackerBox");
+        if (box) {
+            box.style.display = box.style.display === "none" ? "" : "none";
+        }
+    });
+
+    anchor.insertAdjacentElement("afterend", button);
+}
+
+function addTrackerStyles() {
+    if (document.getElementById("tracker-styles")) return;
+
+    const style = document.createElement("style");
+    style.id = "tracker-styles";
+    style.textContent = `
+        #trackerBox {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            width: 300px;
+            z-index: 10000;
+            background: #0b0b27;
+            color: #e4dcdc;
+            border: 1px solid #ffffff;
+            outline: 1px solid #000000;
+            border-radius: 4px;
+            box-shadow: 6px #000000;
+            overflow: hidden;
+        }
+
+        .tracker-banner {
+            display: block;
+            width: 100%;
+            height: 70px;
+            object-fit: cover;
+        }
+
+        .tracker-stats {
+            padding: 12px;
+            line-height: 1.5;
+            border-top: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .tracker-stat {
+            margin-bottom: 6px;
+        }
+
+        .tracker-stat:last-child {
+            margin-bottom: 0;
+        }
+
+        .tracker-frontrunner {
+            border-bottom: 1px solid #000;
+        }
+
+        .tracker-frontrunner h3 {
+            margin: 10px;
+        }
+
+        .tracker-candidate {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0 10px 10px;
+        }
+
+        .tracker-candidate img {
+            width: 100px;
+            max-width: 100px;
+            height: auto;
+            border: 1px solid #ffffff;
+            outline: 1px solid #000000;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .tracker-candidate h4,
+        .tracker-candidate p {
+            margin: 4px 0;
+        }
+    `;
+
+    document.head.appendChild(style);
+}
+
+function updateTracker() {
+    addTrackerButton();
+    buildTracker();
+}
+
+addTrackerStyles();
+setInterval(updateTracker, 100);
 //#endcode
 
 campaignTrail_temp.jet_data = [{
@@ -6514,15 +6914,15 @@ campaignTrail_temp.jet_data = [{
             "variable": 0,
             "operator": ">",
             "amount": 499,
-            "endingTitle": "America's new Joseph Smith",
+            "endingTitle": "Votes for Nothing",
             "endingSubtitle": "",
-            "endingImage": "https://imgs.search.brave.com/f68Mtuoq3xWicwQ1s1WAiIRCh9vZBFs2yEzBPxFp4yg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTkz/MzUyMzE0L3Bob3Rv/L3JlcHVibGljYW4t/cHJlc2lkZW50aWFs/LWNhbmRpZGF0ZS1h/bmQtZm9ybWVyLW1h/LWdvdmVybm9yLW1p/dHQtcm9tbmV5LXNw/ZWFraW5nLWF0LXRo/ZS1hZ3dheS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9UmlO/elBIcFJvU1Z3Smc3/Z3NkYjdMbWhDVXEx/RENjU2ZYbXA4eUNE/ZmVPdz0",
-            "endingText": "<p>500</p>\n\n<p>You had won it all. All you physically could. America is yours. Your nation, your beliefs.</p>\n\n<p>It was yours. You looked out onto a wave of flags and fireworks, Ann at your side. You didn't need to say anything. It was all said for you. Your victory was one for the ages. Ronald Reagan smiled down at you from his heaven. You stood on a podium made of steel. One which you crafted from your own hard work. It was never going to be shattered. Your legacy neither</p>",
-            "endingSlidesJson": "[\n  {\n    \"variable\": 0,\n    \"operator\": \">\",\n    \"amount\": 499,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"America's new Joseph Smith\",\n    \"subtitle\": \"\",\n    \"content\": \"<p>500</p>\\n\\n<p>You had won it all. All you physically could. America is yours. Your nation, your beliefs.</p>\\n\\n<p>It was yours. You looked out onto a wave of flags and fireworks, Ann at your side. You didn't need to say anything. It was all said for you. Your victory was one for the ages. Ronald Reagan smiled down at you from his heaven. You stood on a podium made of steel. One which you crafted from your own hard work. It was never going to be shattered. Your legacy neither</p>\",\n    \"image\": \"https://imgs.search.brave.com/f68Mtuoq3xWicwQ1s1WAiIRCh9vZBFs2yEzBPxFp4yg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTkz/MzUyMzE0L3Bob3Rv/L3JlcHVibGljYW4t/cHJlc2lkZW50aWFs/LWNhbmRpZGF0ZS1h/bmQtZm9ybWVyLW1h/LWdvdmVybm9yLW1p/dHQtcm9tbmV5LXNw/ZWFraW5nLWF0LXRo/ZS1hZ3dheS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9UmlO/elBIcFJvU1Z3Smc3/Z3NkYjdMbWhDVXEx/RENjU2ZYbXA4eUNE/ZmVPdz0\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\",\n    \"audio\": {\n      \"title\": \"Amazing Grace\",\n      \"artist\": \"The Christian Faith\",\n      \"cover\": \"https://imgs.search.brave.com/ltU8fKLiP2A8HbpYWdMQOHDjB2q7Db8j2n4LbVOT5Ys/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/aG9seWFydC5jb20v/YmxvZy93cC1jb250/ZW50L3VwbG9hZHMv/c2l0ZXMvMTAvMjAx/OS8wMy9TdGF0aXN0/aWNzLUFib3V0LUNo/cmlzdGlhbml0eS0z/MDB4MjAwLmpwZw\",\n      \"url\": \"https://audio.jukehost.co.uk/01a1695f-d6a1-7033-99d4-cc52f7180730\"\n    }\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 0,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"A New Horizon\",\n    \"subtitle\": \"The Admiral's America\",\n    \"content\": \"Nothing but a sea of blue\",\n    \"image\": \"https://imgs.search.brave.com/SWXgUfcnsrepufGsrinVlbwKxzDq-JN6fbKSq0XnDZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmlu/c2lkZXIuY29tLzVj/NjFkN2FhYmRlNzBm/NmMyNTU0OTA0Nj93/aWR0aD02MDAmZm9y/bWF0PWpwZWcmYXV0/bz13ZWJw\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\",\n    \"audio\": {\n      \"title\": \"Horizon\",\n      \"artist\": \"Paweł Błaszczak\",\n      \"cover\": \"https://ia601802.us.archive.org/10/items/dying_light_ost/Cover.jpg?cnt=0\",\n      \"url\": \"https://audio.jukehost.co.uk/01a1695f-d602-719c-9270-1823d4eba90b\"\n    }\n  }\n]",
-            "audioTitle": "Amazing Grace",
-            "audioArtist": "The Christian Faith",
-            "audioCover": "https://imgs.search.brave.com/ltU8fKLiP2A8HbpYWdMQOHDjB2q7Db8j2n4LbVOT5Ys/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/aG9seWFydC5jb20v/YmxvZy93cC1jb250/ZW50L3VwbG9hZHMv/c2l0ZXMvMTAvMjAx/OS8wMy9TdGF0aXN0/aWNzLUFib3V0LUNo/cmlzdGlhbml0eS0z/MDB4MjAwLmpwZw",
-            "audioUrl": "https://audio.jukehost.co.uk/01a1695f-d6a1-7033-99d4-cc52f7180730",
+            "endingImage": "https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/Romney_2011_Paradise_Valley%2C_AZ_rally.jpg",
+            "endingText": "",
+            "endingSlidesJson": "[\n  {\n    \"variable\": 0,\n    \"operator\": \">\",\n    \"amount\": 499,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"Votes for Nothing\",\n    \"subtitle\": \"\",\n    \"content\": \"\",\n    \"image\": \"https://file.garden/ajctXfqJL0tJxyhI/The%2047th%20Percent/Romney_2011_Paradise_Valley%2C_AZ_rally.jpg\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [\n      {\n        \"variable\": \"wins\",\n        \"comparator\": \"<=\",\n        \"value\": 0\n      }\n    ],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\",\n    \"audio\": {\n      \"title\": \"Money For Nothing\",\n      \"artist\": \"Dire Straits\",\n      \"cover\": \"https://imgs.search.brave.com/wHbPgQ_R1RXe_E1JpV68gacpqV2P0rP2Pk4OJ1iKkNc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9mYXN0/bHktczMuYWxsbXVz/aWMuY29tL3JlbGVh/c2UvbXIwMDAxNjM3/MTEzL2Zyb250LzQw/MC94MVlSY0pZZUlD/QmZELU9tYkc1VEZC/eWhNLU9GSTh6RzRs/LXFWcFhYQjFJPS5q/cGc\",\n      \"url\": \"https://audio.jukehost.co.uk/01a204e3-920f-7153-9d9f-653c1e665bd3\"\n    }\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \">\",\n    \"amount\": 499,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"America's new Joseph Smith\",\n    \"subtitle\": \"\",\n    \"content\": \"<p>500</p>\\n\\n<p>You had won it all. All you physically could. America is yours. Your nation, your beliefs.</p>\\n\\n<p>It was yours. You looked out onto a wave of flags and fireworks, Ann at your side. You didn't need to say anything. It was all said for you. Your victory was one for the ages. Ronald Reagan smiled down at you from his heaven. You stood on a podium made of steel. One which you crafted from your own hard work. It was never going to be shattered. Your legacy neither</p>\",\n    \"image\": \"https://imgs.search.brave.com/f68Mtuoq3xWicwQ1s1WAiIRCh9vZBFs2yEzBPxFp4yg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTkz/MzUyMzE0L3Bob3Rv/L3JlcHVibGljYW4t/cHJlc2lkZW50aWFs/LWNhbmRpZGF0ZS1h/bmQtZm9ybWVyLW1h/LWdvdmVybm9yLW1p/dHQtcm9tbmV5LXNw/ZWFraW5nLWF0LXRo/ZS1hZ3dheS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9UmlO/elBIcFJvU1Z3Smc3/Z3NkYjdMbWhDVXEx/RENjU2ZYbXA4eUNE/ZmVPdz0\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\",\n    \"audio\": {\n      \"title\": \"Amazing Grace\",\n      \"artist\": \"The Christian Faith\",\n      \"cover\": \"https://imgs.search.brave.com/ltU8fKLiP2A8HbpYWdMQOHDjB2q7Db8j2n4LbVOT5Ys/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/aG9seWFydC5jb20v/YmxvZy93cC1jb250/ZW50L3VwbG9hZHMv/c2l0ZXMvMTAvMjAx/OS8wMy9TdGF0aXN0/aWNzLUFib3V0LUNo/cmlzdGlhbml0eS0z/MDB4MjAwLmpwZw\",\n      \"url\": \"https://audio.jukehost.co.uk/01a1695f-d6a1-7033-99d4-cc52f7180730\"\n    }\n  },\n  {\n    \"variable\": 0,\n    \"operator\": \"==\",\n    \"amount\": 0,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"A New Horizon\",\n    \"subtitle\": \"The Admiral's America\",\n    \"content\": \"Nothing but a sea of blue\",\n    \"image\": \"https://imgs.search.brave.com/SWXgUfcnsrepufGsrinVlbwKxzDq-JN6fbKSq0XnDZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmlu/c2lkZXIuY29tLzVj/NjFkN2FhYmRlNzBm/NmMyNTU0OTA0Nj93/aWR0aD02MDAmZm9y/bWF0PWpwZWcmYXV0/bz13ZWJw\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\",\n    \"audio\": {\n      \"title\": \"Horizon\",\n      \"artist\": \"Paweł Błaszczak\",\n      \"cover\": \"https://ia601802.us.archive.org/10/items/dying_light_ost/Cover.jpg?cnt=0\",\n      \"url\": \"https://audio.jukehost.co.uk/01a1695f-d602-719c-9270-1823d4eba90b\"\n    }\n  }\n]",
+            "audioTitle": "Money For Nothing",
+            "audioArtist": "Dire Straits",
+            "audioCover": "https://imgs.search.brave.com/wHbPgQ_R1RXe_E1JpV68gacpqV2P0rP2Pk4OJ1iKkNc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9mYXN0/bHktczMuYWxsbXVz/aWMuY29tL3JlbGVh/c2UvbXIwMDAxNjM3/MTEzL2Zyb250LzQw/MC94MVlSY0pZZUlD/QmZELU9tYkc1VEZC/eWhNLU9GSTh6RzRs/LXFWcFhYQjFJPS5q/cGc",
+            "audioUrl": "https://audio.jukehost.co.uk/01a204e3-920f-7153-9d9f-653c1e665bd3",
             "endingAccentColor": "#11299e",
             "endingBackgroundColor": "#ffffff",
             "endingTextColor": "#000000",
@@ -6533,9 +6933,94 @@ campaignTrail_temp.jet_data = [{
             "answerConditionAnswers": "",
             "variableConditionName": "",
             "variableConditionValue": "",
-            "endingMode": "simple"
+            "endingMode": "simple",
+            "variableConditions": [
+                {
+                    "variable": "wins",
+                    "comparator": "<=",
+                    "value": 0
+                }
+            ]
+        }
+    },
+    "cyoa_variables": {
+        "1795299822259": {
+            "id": 1795299822259,
+            "name": "approval",
+            "defaultValue": 51
+        },
+        "1795299844094": {
+            "id": 1795299844094,
+            "name": "wins",
+            "defaultValue": 2
+        },
+        "1795300277169": {
+            "id": 1795300277169,
+            "name": "authority",
+            "defaultValue": 0
+        },
+        "1795300312271": {
+            "id": 1795300312271,
+            "name": "division",
+            "defaultValue": 5
+        },
+        "1795321549043": {
+            "id": 1795321549043,
+            "name": "ideology",
+            "defaultValue": -3
+        }
+    },
+    "cyoa_variable_effects": {
+        "21078": {
+            "id": 21078,
+            "answer": 5139,
+            "variable": "division",
+            "operation": "subtract",
+            "amount": 5
+        },
+        "21079": {
+            "id": 21079,
+            "answer": 5139,
+            "variable": "authority",
+            "operation": "subtract",
+            "amount": 1
+        },
+        "21080": {
+            "id": 21080,
+            "answer": 5139,
+            "variable": "approval",
+            "operation": "subtract",
+            "amount": 15
+        },
+        "21081": {
+            "id": 21081,
+            "answer": 5139,
+            "variable": "wins",
+            "operation": "subtract",
+            "amount": 2
+        },
+        "21087": {
+            "id": 21087,
+            "answer": 21083,
+            "variable": "approval",
+            "operation": "subtract",
+            "amount": 20
+        },
+        "21088": {
+            "id": 21088,
+            "answer": 21083,
+            "variable": "wins",
+            "operation": "subtract",
+            "amount": 2
+        },
+        "21089": {
+            "id": 21089,
+            "answer": 21083,
+            "variable": "division",
+            "operation": "add",
+            "amount": 7
         }
     }
 }
 ]
-}
+
