@@ -10,7 +10,7 @@ campaignTrail_temp.questions_json = [
         "model": "campaign_trail.question",
         "pk": 1044,
         "fields": {
-            "description": "You sit  in the oval office all alone. Nothing here to help you but yourself. Your party despises you and the opposition is emboldened beyond compare. they are projected to win a landslide not seen since Reagan in 1984. Your polling has you down by up to 17%. Approval ratings are a joke now. Not a great start but you've worked with bad starts before. For now a Vice President is top priority. Who will you choose to court."
+            "description": "You are in the gutter, so to speak. America was thrown into turbulent waters after the news of the Colorado Plot flooded the television screens of millions of Americans. Obama rightfully won the election and yet you've been selected anyway. Protest in the streets are never-ending and America feels like it's on the brink of a second civil war. Obama calmed the crowds as much as he could but you knew it would never be enough to undo the damage done by those electors. All you can do is try to fix the situation. What do you tell those watching your inauguration?"
         }
     },
     {
@@ -230,7 +230,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5147,
         "fields": {
             "question": 1044,
-            "description": "Donald Blythe is a good man, a representative who holds his values and his family close to heart. I see myself in him, in many ways. He'll make a perfect Vice President, for the first term at least."
+            "description": "Tonight I stand where another man should've, Obama was the rightful winner of the election and we can't act as if me winning is normal. I promise to all of you that I will work with President Obama throughout my term so that his vision isn't lost."
         }
     },
     {
@@ -815,6 +815,14 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 1042,
             "description": "Our nation is being tested today. We are standing in a moment of incredible change, we have to either accept it or face the consequences of rejecting this change. This election has already been transformative and we need to work towards getting those changes done."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21090,
+        "fields": {
+            "question": 1042,
+            "description": "We need to call Obama, only after that will I give a speech."
         }
     }
 ];
@@ -5668,6 +5676,16 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 200,
             "global_multiplier": -0.01
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21092,
+        "fields": {
+            "answer": 21090,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.002
+        }
     }
 ];
 
@@ -5762,7 +5780,25 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 21083,
             "candidate": 200,
-            "answer_feedback": "Obama calls to concede you and talks to you about united the nation after an election this close. Your speech didn't help the situation despite the calls for unity, the people are outraged and even think you are endorsing the behavior of the electors."
+            "answer_feedback": "Obama calls to concede you and talks to you about uniting the nation after an election this close. Your speech didn't help the situation despite the calls for unity, the people are outraged and even think you are endorsing the behavior of the electors."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21091,
+        "fields": {
+            "answer": 21090,
+            "candidate": 200,
+            "answer_feedback": "You call Obama and both of you are just as shocked as the other about the whole situation. Obama makes it clear that should the faithless electors make you president he won't fight it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21095,
+        "fields": {
+            "answer": 5147,
+            "candidate": 200,
+            "answer_feedback": "This is probably the best you could've done with your speech. The pledge might be hard to follow through on but the people are still hopeful that you aren't pulling their legs"
         }
     }
 ];
@@ -6467,19 +6503,29 @@ cyoAdventure = function (a) {
         approval -= 15;
     }
 
-    // -2 wins
-    if ([5139, 21083].includes(ans)) {
-        wins -= 2;
-    }
-
     // -20 approval
     if (ans == 21083) {
         approval -= 20;
     }
 
+    // -2 wins
+    if (ans == 21083) {
+        wins -= 2;
+    }
+
     // +7 division
     if (ans == 21083) {
         division += 7;
+    }
+
+    // -10 approval
+    if (ans == 21090) {
+        approval -= 10;
+    }
+
+    // -2 division
+    if (ans == 21090) {
+        division -= 2;
     }
     // [JETS_CYOA_VARIABLE_EFFECTS_END]
 
@@ -6992,13 +7038,6 @@ campaignTrail_temp.jet_data = [{
             "operation": "subtract",
             "amount": 15
         },
-        "21081": {
-            "id": 21081,
-            "answer": 5139,
-            "variable": "wins",
-            "operation": "subtract",
-            "amount": 2
-        },
         "21087": {
             "id": 21087,
             "answer": 21083,
@@ -7019,8 +7058,23 @@ campaignTrail_temp.jet_data = [{
             "variable": "division",
             "operation": "add",
             "amount": 7
+        },
+        "21093": {
+            "id": 21093,
+            "answer": 21090,
+            "variable": "approval",
+            "operation": "subtract",
+            "amount": 10
+        },
+        "21094": {
+            "id": 21094,
+            "answer": 21090,
+            "variable": "division",
+            "operation": "subtract",
+            "amount": 2
         }
     }
 }
 ]
+
 
