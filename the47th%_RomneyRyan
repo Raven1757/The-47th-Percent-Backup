@@ -238,7 +238,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5148,
         "fields": {
             "question": 1044,
-            "description": "Claire seems like a good choice. Yes, she hasn't held any political position before but she has been instrumental in my career and i believe that having someone who is in synch as much as her and I will be the perfect ticket to stabilize our broken nation"
+            "description": "I am proud to be standing here, giving a speech to the people I love. It isn't under the circumstances I would've wanted but I'm happy nonetheless. I will do whatever it takes to bring America back together after this disastrous election."
         }
     },
     {
@@ -5800,6 +5800,15 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 200,
             "answer_feedback": "This is probably the best you could've done with your speech. The pledge might be hard to follow through on but the people are still hopeful that you aren't pulling their legs"
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21096,
+        "fields": {
+            "answer": 5148,
+            "candidate": 200,
+            "answer_feedback": "The people want you out, Obama is their man, you are the man who stole it all away. you were never going to get a good result no matter what the speech was but you wish you could've calmed them."
+        }
     }
 ];
 
@@ -7076,5 +7085,4 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
-
 
